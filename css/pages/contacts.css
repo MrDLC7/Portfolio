@@ -1,0 +1,378 @@
+/* === CSS Variables for Contacts === */
+:root {
+    --contact-max-width: 50rem;
+    --contact-form-width: 320px;
+    --contact-gap: 1.5rem;
+    --input-font-size: 0.65rem;
+    --label-font-size: 0.7rem;
+    --text-font-size: 0.8rem;
+    --grid-text-font-size: 0.65rem;
+    --h2-font-size: 1rem;
+    --h3-font-size: 0.75rem;
+    --icon-sm: 0.75rem;
+    --icon-md: 1.5rem;
+    --icon-lg: 5rem;
+    --mb-16: 1rem;
+    --mb-4: 0;
+    --space-y-8-margin: 0.5rem;
+  }
+  
+  /* === Base Contact Styles === */
+  #contact-form {
+    margin: 0 auto;
+    max-width: var(--contact-form-width);
+    backdrop-filter: blur(10px);
+    background-color: var(--color-background-form);
+  }
+  
+  .map-link,
+  .map-link:visited {
+    color: var(--color-background-primary);
+  }
+  
+  .map-link:hover {
+    text-decoration: underline;
+  }
+  
+  .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --space-y-reverse: 0;
+    margin-top: calc(var(--space-y-8-margin) * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(var(--space-y-8-margin) * var(--space-y-reverse));
+  }
+  
+  .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --space-x-reverse: 0;
+    margin-right: calc(1rem * var(--space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--space-x-reverse)));
+  }
+  
+  .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--space-y-reverse));
+  }
+  
+  .resize-none {
+    resize: none;
+  }
+  
+  /* === Contacts Layout === */
+  #contacts .max-width-container {
+    max-width: var(--contact-max-width);
+    margin: 0 auto;
+  }
+  
+  #contacts .max-width-container input,
+  #contacts .max-width-container textarea {
+    font-size: var(--input-font-size);
+  }
+  
+  #contacts .contact-form {
+    max-width: var(--contact-form-width);
+  }
+  
+  #contacts .space-y-6 label {
+    font-size: var(--label-font-size);
+  }
+  
+  #contacts .max-width-container p {
+    font-size: var(--text-font-size);
+  }
+  
+  #contacts .max-width-container .grid p {
+    font-size: var(--grid-text-font-size);
+  }
+  
+  h2 {
+    font-size: var(--h2-font-size);
+  }
+  
+  #contacts .max-width-container h3 {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-4);
+  }
+  
+  #contacts .gap-20 {
+    gap: var(--contact-gap);
+  }
+  
+  #contacts .w-6,
+  #contacts .h-6 {
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+  }
+  
+  #contacts .w-12,
+  #contacts .h-12 {
+    width: var(--icon-md);
+    height: var(--icon-md);
+    padding: 10px;
+  }
+  
+  .w-36 {
+    width: var(--icon-lg);
+  }
+  
+  .mb-4 {
+    margin-bottom: var(--mb-4);
+  }
+  
+  /* === Responsive Grid Layouts === */
+  
+  /* Medium mobile (≥480px) */
+  @media (min-width: 480px) {
+    :root {
+      --contact-max-width: 60rem;
+      --contact-form-width: 360px;
+      --input-font-size: 0.75rem;
+      --label-font-size: 0.8rem;
+      --text-font-size: 1rem;
+      --grid-text-font-size: 0.75rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 0.9rem;
+      --icon-sm: 0.75rem;
+      --icon-md: 1.5rem;
+      --icon-lg: 6rem;
+      --mb-16: 1rem;
+      --space-y-8-margin: 1.5rem;
+    }
+    
+    #contacts .space-x-4 {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      padding: 0;
+    }
+  }
+  
+  /* Large mobile (≥600px) */
+  @media (min-width: 600px) {
+    :root {
+      --contact-max-width: 60rem;
+      --contact-form-width: 400px;
+      --input-font-size: 0.8rem;
+      --label-font-size: 0.9rem;
+      --text-font-size: 1.075rem;
+      --grid-text-font-size: 0.85rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1rem;
+      --icon-sm: 1rem;
+      --icon-md: 1.75rem;
+      --icon-lg: 7rem;
+      --mb-16: 2rem;
+      --mb-4: 0.25rem;
+    }
+    
+    #contacts .space-x-4 {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  /* Tablet portrait (≥768px) */
+  @media (min-width: 768px) {
+    :root {
+      --contact-max-width: 70rem;
+      --contact-form-width: 400px;
+      --h2-font-size: 1.75rem;
+      --h3-font-size: 1.125rem;
+      --icon-sm: 1.5rem;
+      --icon-md: 2.25rem;
+      --icon-lg: 8rem;
+      --contact-gap: 1.8rem;
+      --mb-16: 2.5rem;
+      --mb-4: 0.5rem;
+      --space-y-8-margin: 2rem;
+    }
+  }
+  
+  /* Tablet landscape (≥850px) */
+  @media (min-width: 850px) {
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: center;
+    }
+  }
+  
+  /* Responsive grid for tablets (540px-849px) */
+  @media (min-width: 540px) and (max-width: 849px) {
+    #contacts .space-y-8 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    #contacts .space-x-4 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      padding: 0 2rem;
+    }
+  }
+  
+  /* Small desktop / Tablet (≥1024px) */
+  @media (min-width: 1024px) {
+    :root {
+      --contact-max-width: 80rem;
+      --contact-form-width: 500px;
+      --input-font-size: 0.8rem;
+      --label-font-size: 0.9rem;
+      --text-font-size: 1.125rem;
+      --grid-text-font-size: 0.9rem;
+      --h2-font-size: 1.75rem;
+      --h3-font-size: 1.125rem;
+      --contact-gap: 5rem;
+      --icon-lg: 9rem;
+      --mb-16: 3rem;
+    }
+    
+    #contacts .p-8 {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Medium desktop / Tablet landscape (≥1280px) */
+  @media (min-width: 1280px) {
+    :root {
+      --contact-max-width: 90rem;
+      --input-font-size: 0.9rem;
+      --label-font-size: 1rem;
+      --text-font-size: 1.125rem;
+      --grid-text-font-size: 1rem;
+      --h2-font-size: 2rem;
+      --h3-font-size: 1.25rem;
+      --contact-gap: 10rem;
+      --icon-sm: 1.5rem;
+      --icon-md: 2.25rem;
+      --icon-lg: 10rem;
+      --mb-16: 3.5rem;
+      --mb-4: 0.5rem;
+    }
+  }
+  
+  /* Standard desktop (≥1440px) */
+  @media (min-width: 1440px) {
+    :root {
+      --contact-max-width: 100rem;
+      --contact-form-width: 500px;
+      --input-font-size: 1rem;
+      --label-font-size: 1.1rem;
+      --text-font-size: 1.25rem;
+      --grid-text-font-size: 1.1rem;
+      --h2-font-size: 2.25rem;
+      --h3-font-size: 1.35rem;
+      --contact-gap: 15rem;
+      --icon-sm: 1.75rem;
+      --icon-md: 2.5rem;
+      --icon-lg: 11rem;
+      --mb-16: 4rem;
+      --mb-4: 0.5rem;
+    }
+    
+    #contacts .max-width-container h3 {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Laptop / Desktop (≥1600px) */
+  @media (min-width: 1600px) {
+    :root {
+      --contact-max-width: 110rem;
+      --contact-form-width: 550px;
+      --input-font-size: 1.1rem;
+      --label-font-size: 1.3rem;
+      --text-font-size: 1.5rem;
+      --grid-text-font-size: 1.3rem;
+      --h2-font-size: 2.5rem;
+      --h3-font-size: 1.5rem;
+      --contact-gap: 20rem;
+      --icon-sm: 2rem;
+      --icon-md: 3rem;
+      --icon-lg: 12rem;
+      --mb-16: 4.5rem;
+      --mb-4: 0.75rem;
+    }
+    
+    #contacts .max-width-container h3 {
+      margin-bottom: 1.325rem;
+    }
+    
+    #contacts .p-8 {
+      padding: 2rem;
+    }
+    
+    #contacts .space-x-4 {
+      padding: 0.25rem;
+    }
+  }
+  
+  /* Full HD / Large desktop (≥1920px) */
+  @media (min-width: 1920px) {
+    :root {
+      --contact-max-width: 120rem;
+      --contact-form-width: 600px;
+      --input-font-size: 1.2rem;
+      --label-font-size: 1.4rem;
+      --text-font-size: 1.6rem;
+      --grid-text-font-size: 1.4rem;
+      --h2-font-size: 2.75rem;
+      --h3-font-size: 1.65rem;
+      --contact-gap: 22.5rem;
+      --icon-sm: 2.2rem;
+      --icon-md: 3.2rem;
+      --icon-lg: 13rem;
+      --mb-16: 4.5rem;
+      --mb-4: 0.75rem;
+    }
+    
+    #contacts .max-width-container h3 {
+      margin-bottom: 1.375rem;
+    }
+    
+    #contacts .p-8 {
+      padding: 2.5rem;
+    }
+    
+    #contacts .space-x-4 {
+      padding: 0.25rem;
+    }
+  }
+  
+  /* Ultra HD / 4K (≥2560px) */
+  @media (min-width: 2560px) {
+    :root {
+      --contact-max-width: 130rem;
+      --contact-form-width: 700px;
+      --input-font-size: 1.3rem;
+      --label-font-size: 1.5rem;
+      --text-font-size: 1.75rem;
+      --grid-text-font-size: 1.5rem;
+      --h2-font-size: 3rem;
+      --h3-font-size: 1.75rem;
+      --contact-gap: 25rem;
+      --icon-sm: 2.5rem;
+      --icon-md: 3.5rem;
+      --icon-lg: 14rem;
+    }
+    
+    #contacts .max-width-container h3 {
+      margin-bottom: 1.5rem;
+    }
+    
+    #contacts .p-8 {
+      padding: 3rem;
+    }
+    
+    #contacts .space-x-4 {
+      padding: 0.5rem;
+    }
+  }
+  
+  /* === Print styles === */
+  @media print {
+    #contacts .space-x-4,
+    #contacts .space-y-8 {
+      display: block;
+    }
+    
+    .map-link {
+      text-decoration: none;
+    }
+  }

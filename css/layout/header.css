@@ -1,0 +1,59 @@
+  /* === Base Header Styles === */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding-top: var(--header-padding-top);
+    padding-bottom: var(--header-padding-bottom);
+    background-color: var(--color-text-primary);
+    box-shadow: 0 1px 10px var(--color-shadow-primary);
+  }
+  
+  .container-header {
+    width: 100%;
+    padding: var(--container-header-padding);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .header h3 {
+    font-size: var(--header-h3-size);
+  }
+  
+  .header div {
+    font-size: var(--header-div-size);
+  }
+  
+  .header .gap-50 {
+    gap: var(--header-gap);
+  }
+  
+  /* === Link Hover Effect === */
+  .link-hover {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .link-hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: var(--link-hover-height);
+    background-color: var(--color-background-primary);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+  }
+  
+  .link-hover:hover:after,
+  .active.link-hover:after {
+    transform: scaleX(1.5);
+  }
+  
+  /* === Active State Styles === */
+  .active {
+    font-size: var(--active-font-size);
+  }

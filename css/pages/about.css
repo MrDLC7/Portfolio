@@ -1,0 +1,308 @@
+/* === CSS Variables for About & Skills Sections === */
+:root {
+    /* Layout */
+    --max-w-6xl: 30rem;
+    --card-main-width: 1000px;
+    
+    /* Padding */
+    --py-20-top: 0rem;
+    --py-20-bottom: 0rem;
+    --py-10-top: 1.2rem;
+    --py-10-bottom: 1.2rem;
+    --skills-padding-top: 3rem;
+    
+    /* Grid */
+    --grid-cols-skills: 1;
+    --grid-cols-about: 1;
+    --gap-10: 1.5rem;
+    --gap-between: 1.3rem;
+    
+    /* Skills grid visibility */
+    --skills-grid-2-display: block;
+    --skills-grid-3-display: none;
+    --skills-grid-4-display: none;
+    
+    /* Typography */
+    --space-y-skills-h3-size: 1rem;
+    --space-y-skills-h4-size: 0.8rem;
+    --space-y-skills-span-size: 0.6rem;
+    --h-3-height: 0.45rem;
+  }
+  
+  /* === Base Styles === */
+  
+  /* Main content card */
+  .card-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: var(--card-main-width);
+    padding: 5px;
+    border-radius: 20px;
+    z-index: 999;
+  }
+  
+  /* Skills items */
+  .skills {
+    background-color: var(--color-border-light);
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 7px gray;
+  }
+  
+  .skills:hover {
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .skills-container {
+    padding: 15px;
+  }
+  
+  /* Skill progress bar */
+  .skill-bar {
+    transition: width 5s ease-in-out;
+  }
+  
+  /* Spacing utilities */
+  .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --space-y-reverse: 0;
+    margin-top: calc(3rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(3rem * var(--space-y-reverse));
+  }
+  
+  .space-y-skills > :not([hidden]) ~ :not([hidden]) {
+    --space-y-reverse: 0;
+    margin-top: calc(var(--gap-between) * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(var(--gap-between) * var(--space-y-reverse));
+  }
+  
+  /* Typography utilities */
+  .space-y-skills h3 {
+    font-size: var(--space-y-skills-h3-size);
+  }
+  
+  .space-y-skills h4 {
+    font-size: var(--space-y-skills-h4-size);
+  }
+  
+  .space-y-skills span {
+    font-size: var(--space-y-skills-span-size);
+  }
+  
+  div .h-3 {
+    height: var(--h-3-height);
+  }
+  
+  /* Container utilities */
+  
+  .max-w-6xl {
+    max-width: var(--max-w-6xl);
+  }
+  
+  /* Padding utilities */
+  .py-20 {
+    padding-top: var(--py-20-top);
+    padding-bottom: var(--py-20-bottom);
+  }
+
+  .gap-between {
+    gap: var(--gap-between); 
+  }
+  
+  .py-10 {
+    padding-top: var(--py-10-top);
+    padding-bottom: var(--py-10-bottom);
+  }
+/*   
+  #skills {
+    padding-top: var(--skills-padding-top);
+  } */
+  
+  /* Grid utilities */
+  .grid-cols-about {
+    grid-template-columns: repeat(var(--grid-cols-about), minmax(0, 1fr));
+  }
+  
+  .grid-cols-skills {
+    grid-template-columns: repeat(var(--grid-cols-skills), minmax(0, 1fr));
+  }
+  
+  .gap-10 {
+    gap: var(--gap-10);
+  }
+  
+  /* Skills grid visibility */
+  .skills-grid-2 {
+    display: var(--skills-grid-2-display);
+  }
+  
+  .skills-grid-3 {
+    display: var(--skills-grid-3-display);
+  }
+  
+  .skills-grid-4 {
+    display: var(--skills-grid-4-display);
+  }
+
+  
+
+  
+  /* === Responsive Breakpoints === */
+
+  /* Medium mobile (≥480px) */
+  @media (min-width: 480px) {
+    :root {
+      --py-20-top: 1rem;
+      --py-20-bottom: 1rem;
+      --gap-between: 1.5rem;
+    }
+  }
+  
+  /* Large mobile (≥600px) */
+  @media (min-width: 600px) {
+    :root {
+      --py-20-top: 2rem;
+      --py-20-bottom: 2rem;
+      --gap-between: 1.8rem;
+      --max-w-6xl: 40rem;
+      --space-y-skills-h3-size: 1.15rem;
+      --space-y-skills-h4-size: 0.9rem;
+      --space-y-skills-span-size: 0.7rem;
+      --h-3-height: 0.55rem;
+    }
+  }
+  
+  /* Tablet portrait (≥768px) */
+  @media (min-width: 768px) {
+    :root {
+      --card-main-width: 1000px;
+      --max-w-6xl: 50rem;
+      --grid-cols-skills: 2;
+      --py-10-top: 1.3rem;
+      --py-10-bottom: 1.3rem;
+      --gap-between: 2rem;
+      --skills-grid-2-display: block;
+      --skills-grid-3-display: none;
+    }
+  }
+  
+  /* Small desktop / Tablet (≥1024px) */
+  @media (min-width: 1024px) {
+    :root {
+      --card-main-width: 1200px;
+      --max-w-6xl: 66rem;
+      --py-20-top: 2.5rem;
+      --py-20-bottom: 2.5rem;
+      --gap-between: 2.5rem;
+      --space-y-skills-h3-size: 1.2rem;
+      --space-y-skills-h4-size: 0.9rem;
+      --space-y-skills-span-size: 0.7rem;
+    }
+  }
+  
+  /* Tablet landscape (≥850px) */
+  @media (min-width: 850px) {
+    :root {
+      --grid-cols-about: 2;
+      --gap-between: 2.5rem;
+    }
+  }
+  
+  /* Medium desktop / Tablet landscape (≥1280px) */
+  @media (min-width: 1280px) {
+    :root {
+      --card-main-width: 1400px;
+      --max-w-6xl: 72rem;
+      --py-20-top: 3rem;
+      --py-20-bottom: 3rem;
+      --py-10-top: 1.5rem;
+      --py-10-bottom: 1.5rem;
+      --gap-between: 3rem;
+      --grid-cols-skills: 3;
+      --space-y-skills-h3-size: 1.3rem;
+      --space-y-skills-h4-size: 1rem;
+      --space-y-skills-span-size: 0.8rem;
+      --h-3-height: 0.55rem;
+      --skills-grid-2-display: none;
+      --skills-grid-3-display: block;
+    }
+  }
+  
+  /* Standard desktop (≥1440px) */
+  @media (min-width: 1440px) {
+    :root {
+      --card-main-width: 1600px;
+      --max-w-6xl: 72rem;
+      --py-20-top: 3.5rem;
+      --py-20-bottom: 3.5rem;
+      --gap-between: 3.5rem;
+      --space-y-skills-h3-size: 1.35rem;
+      --space-y-skills-h4-size: 1.1rem;
+      --space-y-skills-span-size: 0.9rem;
+      --h-3-height: 0.65rem;
+    }
+  }
+  
+  /* Laptop / Desktop (≥1600px) */
+  @media (min-width: 1600px) {
+    :root {
+      --card-main-width: 1800px;
+      --max-w-6xl: 80rem;
+      --py-20-top: 4rem;
+      --py-20-bottom: 4rem;
+      --gap-between: 4rem;
+      --space-y-skills-h3-size: 1.45rem;
+      --space-y-skills-h4-size: 1.25rem;
+      --space-y-skills-span-size: 1rem;
+    }
+  }
+  
+  /* Full HD / Large desktop (≥1920px) */
+  @media (min-width: 1920px) {
+    :root {
+      --card-main-width: 2000px;
+      --max-w-6xl: 100rem;
+      --py-20-top: 4.5rem;
+      --py-20-bottom: 4.5rem;
+      --grid-cols-skills: 4;
+      --gap-between: 4rem;
+      --space-y-skills-h3-size: 1.65rem;
+      --space-y-skills-h4-size: 1.35rem;
+      --space-y-skills-span-size: 1.1rem;
+      --skills-grid-3-display: none;
+      --skills-grid-4-display: block;
+    }
+  }
+  
+  /* Ultra HD / 4K (≥2560px) */
+  @media (min-width: 2560px) {
+    :root {
+      --card-main-width: 2200px;
+      --max-w-6xl: 110rem;
+      --py-20-top: 5rem;
+      --py-20-bottom: 5rem;
+      --gap-between: 5rem;
+      --space-y-skills-h3-size: 1.8rem;
+      --space-y-skills-h4-size: 1.5rem;
+      --space-y-skills-span-size: 1.3rem;
+    }
+  }
+  
+  /* === Print styles === */
+  @media print {
+    .skills:hover {
+      transform: none;
+      box-shadow: 0 1px 7px gray;
+    }
+    
+    .skill-bar {
+      transition: none;
+    }
+    
+    .card-main {
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+  }

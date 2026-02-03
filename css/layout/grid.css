@@ -1,0 +1,84 @@
+/* === Стилі контейнера === */
+/* === Ширина елемента === */
+.w-6 {
+    width: 1.5rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.w-12 {
+    width: 3rem;
+}
+
+.w-24 {
+    width: 6rem;
+}
+
+.w-36 {
+    width: 9rem;
+}
+
+.w-64 {
+    width: 18rem;
+}
+
+.w-80 {
+    width: 20rem;
+}
+
+
+/* === Повна ширина === */
+.w-full {
+    width: 100%;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.h-40 {
+    height: 10rem;
+}
+
+.h-64 {
+    height: 18rem;
+}
+
+.h-80 {
+    height: 20rem;
+}
+
+/* === Максимальна ширина контейнерів === */
+.max-w-4xl {
+    max-width: 56rem;
+}
+
+.max-w-5xl {
+    max-width: 64rem;
+}
+
+.max-w-6xl {
+    max-width: 72rem;
+}
+
+.max-w-7xl {
+    max-width: 80rem;
+}
+
+.max-w-8xl {
+    max-width: 88rem;
+}
+
+.max-w-9xl {
+    max-width: 96rem;
+}
+
+.max-w-10xl {
+    max-width: 104rem;
+}

@@ -1,0 +1,6 @@
+/* === Анімація при наведенні курсору === */
+.shake:hover {
+    cursor: pointer;                                /* Зміна курсора */
+    box-shadow: 0 0 24px rgba(0, 123, 255, 0.3);  /* Збільшення тіні */
+    animation: shake 2s ease-in-out infinite;       /* Назва, тривалість, функція, нескінченно */
+}

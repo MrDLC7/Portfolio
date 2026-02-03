@@ -1,0 +1,22 @@
+/* === Насиченість шрифтів === */
+/* === Легкий === */
+.font-light {
+    font-weight: 300;               
+}
+
+/* === Середній === */
+.font-medium {
+    font-weight: 500;
+}
+
+/* === Напівжирний === */
+.font-semibold {
+    font-weight: 600;
+}
+
+/* === Жирний === */
+.font-bold {
+    font-weight: 700;
+}
+
+

@@ -1,0 +1,102 @@
+/* === Інформаційний блок === */
+.info {
+    margin: 0;                  /* Скидання зовнішніх відступів для вирівнювання */
+}
+
+/* === Контейнер елементів, що анімуються (стрічка) === */
+.items {
+    height: auto;                                           /* Висота залежить від контенту */
+    display: flex;                                          /* Вирівнювання елементів у ряд */
+    flex-wrap: wrap;                                        /* Перенос елементів на новий ряд при потребі */
+    gap: 10px;                                              /* Відстань між елементами */
+    margin: 0;                                              /* Скидання зовнішніх відступів */
+    opacity: 0;                                             /* Початково невидимі (анімується далі) */
+    animation: fadeInOpacity 2.5s 2.5s ease-in-out forwards;     /* Плавна поява з затримкою */
+    transition: all 0.3s ease;                              /* Плавні зміни при hover або адаптації */
+}
+
+/* === Обгортка для рухомої стрічки === */
+.items-wrapper { 
+    position: relative;
+    margin: 0;
+    width: 100%;                               /* Займає 90% ширини контейнера */
+    max-height: 150px;                           /* Висота стрічки */
+    max-width: 1000px;                        /* Максимальна ширина */
+    margin-inline: auto;                      /* Центрування по горизонталі */
+    overflow: hidden;                         /* Ховає все, що виходить за межі */
+    
+    /* Маска — ефект плавного зникання елементів по краях стрічки */
+    mask-image: linear-gradient(
+        to right,
+        var(--mask-color-transparent) var(--mask-start-fade),
+        var(--mask-color-opaque) var(--mask-gradient-start),
+        var(--mask-color-opaque) var(--mask-gradient-end),
+        var(--mask-color-transparent) var(--mask-end-fade)
+    );
+}
+
+/* === Елемент стрічки, що рухається === */
+.item {
+    letter-spacing: 1px;
+    display: flex;                              /* Центрування тексту всередині */
+    align-items: center;
+    justify-content: center;
+    height: auto;                               /* Автоматична висота */
+    border-radius: 40px;                        /* Закруглені краї для “піллюльного” вигляду */
+    position: absolute;                         /* Абсолютне позиціонування для руху */
+    font-weight: bold;
+    
+    margin-top: 30px;
+    color: var(--color-scroll-banner-item-text);
+    transition: background 0.3s, transform 0.3s;
+    
+    
+    /* Безкінечна анімація руху вліво */
+    animation: scrollLeft 40s linear infinite;
+}
+
+
+/* === Ефект при наведенні на елемент стрічки === */
+.item:hover {
+    background: var(--color-scroll-banner-item-bg);     /* Світліший фон */
+    transform: translateY(-3px);                /* Легке підняття вгору */
+    cursor: pointer;
+}
+
+/* === Індивідуальні затримки для кожного елемента стрічки === */
+/* Дозволяє створити рівномірний потік елементів при русі */
+.item1 {
+    animation-delay: calc(40s / 7 * (7 - 1) * -1);
+    color: var(--color-scrollbar-item-one);
+}
+
+.item2 {
+    animation-delay: calc(40s / 7 * (7 - 2) * -1);
+    color: var(--color-scrollbar-item-two);
+}
+
+.item3 {
+    animation-delay: calc(40s / 7 * (7 - 3) * -1);
+    color: var(--color-scrollbar-item-three);
+}
+
+.item4 {
+    animation-delay: calc(40s / 7 * (7 - 4) * -1);
+    color: var(--color-scrollbar-item-four);
+}
+
+.item5 {
+    animation-delay: calc(40s / 7 * (7 - 5) * -1);
+    color: var(--color-scrollbar-item-five);
+}
+
+.item6 {
+    animation-delay: calc(40s / 7 * (7 - 6) * -1);
+    color: var(--color-scrollbar-item-six);
+}
+
+/* Сьомий елемент без затримки — стартує одразу */
+.item7 {
+    animation-delay: calc(40s / 7 * (7 - 7) * -1);
+    color: var(--color-scrollbar-item-seven);
+}

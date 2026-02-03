@@ -1,0 +1,17 @@
+/* === Footer Styles === */
+footer {
+    background-color: var(--color-text-primary);
+    z-index: 999;
+    height: var(--footer-height);
+    text-shadow: 1px 1px 3px var(--color-shadow-primary);
+    padding: 15px 0;
+    box-shadow: 0 -1px 10px -1px var(--color-shadow-primary);
+  }
+  
+  .footer {
+    padding: var(--footer-padding);
+  }
+  
+  .footer h6 {
+    font-size: var(--footer-h6-size);
+  }

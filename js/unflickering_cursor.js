@@ -22,3 +22,46 @@ if (document.readyState === 'loading') {
 } else {
     initUnflickeringCursor();
 }
+
+
+function screenParams() {
+    const containerMedia = document.createElement('div');
+    const labelWidth = document.createElement('h5');
+    const labelHeight = document.createElement('h5');
+
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    labelWidth.textContent = `Ширина: ${screenWidth}px`;
+    labelHeight.textContent = `Висота: ${screenHeight}px`;
+
+    containerMedia.appendChild(labelWidth);
+    containerMedia.appendChild(labelHeight);
+    Object.assign(containerMedia.style, {
+        position: 'fixed',
+        top: 'var(--padding-bottom)',
+        left: 'var(--padding-left)',
+        padding: '10px',
+        borderRadius: '10px',
+        background: 'var(--color-neutral-gray)',
+        color: 'var(--color-text-primary)',
+        fontSize: '14px',
+        zIndex: '1000',
+        display: 'flex',
+        flexDirection: 'column',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        gap: '5px'
+    });
+
+    document.body.appendChild(containerMedia);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', screenParams);
+} else {
+    screenParams();
+}
+
+
+window.addEventListener('resize', screenParams);

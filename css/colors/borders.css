@@ -1,0 +1,54 @@
+/* === Заокруглення кутів контейнера === */
+/* === Заокруглення верху === */
+.rounded-top {
+    border-radius: 25px 25px 0 0;
+}
+
+.rounded-25 {
+    border-radius: 25px;
+}
+
+
+/* === Заокруглення lg === */
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+/* === Заокруглення 2xl === */
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+/* === Заокруглення повне === */
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* === Межа контейнера === */
+.border {
+    border: 2px solid black;
+}
+
+.border-red {
+    border: 2px solid red;
+}
+
+.border-yellow {
+    border: 2px solid yellow;
+}
+
+.border-greenyellow {
+    border: 2px solid greenyellow;
+}
+
+.border-blue {
+    border: 2px solid blue;
+}
+
+.border-fuchsia {
+    border: 2px solid fuchsia;
+}
+
+.border-black {
+    border: 1px solid black;
+}

@@ -1,0 +1,299 @@
+/* === Утилітарні класи для верстки === */
+
+/* === Вирівнювання елементів по вертикалі в центрі === */
+.align-center {
+    align-items: center;
+}
+
+/* === Увімкнення flex-контейнера === */
+.flex {
+    display: flex;
+}
+
+/* === Увімкнення grid-контейнера === */
+.grid {
+    display: grid;
+}
+
+/* ===  === */
+.block {
+    display: block; 
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+/* === Приховує вихідний за межі контент === */
+.hidden {
+    overflow: hidden;
+}
+
+
+/* === Вирівнювання елементів у колонку === */
+.flex-col {
+    flex-direction: column;
+}
+
+/* === Вирівнювання елементів у ряд === */
+.flex-row {
+    flex-direction: row;
+}
+
+/* === Дозвіл переносу елементів на новий ряд === */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* === Розподіл елементів по краях === */
+.justify-around {
+    justify-content: space-around;
+}
+
+/* === Розподіл елементів по краях === */
+.justify-between {
+    justify-content: space-between;
+}
+
+/* === Горизонтальне центрування === */
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+/* === Вертикальне центрування === */
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: start;
+}
+
+/* === Центрування тексту === */
+.text-center {
+    text-align: center;
+}
+
+/* === Заповнення текстом === */
+.text-justify {
+    text-align: justify;
+}
+
+
+/* === Відстань між елементами === */
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-10 {
+    gap: 1.9rem;
+}
+
+.gap-20 {
+    gap: 3rem;
+}
+
+.gap-30 {
+    gap: 4rem;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-50 {
+    gap: 50px;
+}
+
+
+/* === Зовнішні відступи === */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-8 {
+    margin-top: 4rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.m-50 {
+    margin: 2.5rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/* === Внутрішні відступи === */
+.p-3 {
+    padding: 0.25rem 0.5rem;
+}
+
+.p-9 {
+    padding: 1rem 2rem;
+}
+
+.p-5 {
+    padding: 0.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.p-20 {
+    padding: 4rem;
+}
+
+.pt-8 {
+    padding-top: 2rem;
+}
+
+.pt-20 {
+    padding-top: 4rem;
+}
+
+.pt-40 {
+    padding-top: 8rem;
+}
+
+.pt-60 {
+    padding-top: 12rem;
+}
+
+.pt-80 {
+    padding-top: 16rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.py-10 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px-8 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.top-4 {
+    top: 1rem;
+}
+.left-4 {
+    left: 1rem;
+}
+
+.bottom-4 {
+    bottom: 1rem;
+} 
+
+.right-4 {
+    right: 1rem;
+}
+
+.top-2 {
+    top: 0.5rem;
+}
+.left-2 {
+    left: 0.5rem;
+}
+
+
+.top-10 {
+    top: 2.5rem;
+}
+
+.left-10 {
+    left: 2.5rem;
+}
+
+.right-10 {
+    left: 2.5rem;
+}
+
+.bottom-10 {
+    bottom: 2.5rem;
+} 

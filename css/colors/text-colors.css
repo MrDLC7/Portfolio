@@ -1,0 +1,183 @@
+/* === Кольори тексту === */
+.text-white {
+    color: var(--color-text-primary);
+}
+.text-white-wh {
+    color: white;
+}
+
+.text-black {
+    color: var(--color-background-primary);
+}
+
+.text-black-bl {
+    color: black;
+}
+
+.text-gray {
+    color: var(--color-neutral-gray);
+}
+
+.text-color {
+    --text-opacity: 1;
+    color: rgb(107 114 128 / var(--text-opacity, 1));
+}
+
+/* === Прозорість 10% === */
+.text-slate-100 {
+    --text-opacity: 1;
+    color: rgb(241 245 249 / var(--text-opacity, 1));
+}
+
+/* === Прозорість 50% === */
+.text-pink-500 {
+    --text-opacity: 1;
+    color: rgb(236 72 153 / var(--text-opacity, 1));
+}
+
+.text-fuchsia-500 {
+    --text-opacity: 1;
+    color: rgb(217 70 239 / var(--text-opacity, 1));
+}
+
+.text-sky-500 {
+    --text-opacity: 1;
+    color: rgb(56 189 248 / var(--text-opacity, 1));
+}
+
+.text-teal-500 {
+    --text-opacity: 1;
+    color: rgb(20 184 166 / var(--text-opacity, 1));
+}
+
+.text-lime-500 {
+    --text-opacity: 1;
+    color: rgb(132 204 22 / var(--text-opacity, 1));
+}
+
+.text-yellow-500 {
+    --text-opacity: 1;
+    color: rgb(234 179 8 / var(--text-opacity, 1));
+}
+
+.text-red-500 {
+    --text-opacity: 1;
+    color: rgb(239 68 68 / var(--text-opacity, 1));
+}
+
+/* === Прозорість 60% === */
+.text-rose-600 {
+    --text-opacity: 1;
+    color: rgb(225 29 72 / var(--text-opacity, 1));
+}
+
+.text-pink-600 {
+    --text-opacity: 1;
+    color: rgb(219 39 119 / var(--text-opacity, 1));
+}
+
+.text-fuchsia-600 {
+    --text-opacity: 1;
+    color: rgb(192 38 211 / var(--text-opacity, 1));
+}
+
+.text-purple-600 {
+    --text-opacity: 1;
+    color: rgb(147 51 234 / var(--text-opacity, 1));
+}
+
+.text-violet-600 {
+    --text-opacity: 1;
+    color: rgb(124 58 237 / var(--text-opacity, 1));
+}
+
+.text-indigo-600 {
+    --text-opacity: 1;
+    color: rgb(79 70 229 / var(--text-opacity, 1));
+}
+
+.text-blue-600 {
+    --text-opacity: 1;
+    color: rgb(37 99 235 / var(--text-opacity, 1));
+}
+
+.text-sky-600 {
+    --text-opacity: 1;
+    color: rgb(2 132 199 / var(--text-opacity, 1));
+}
+
+.text-cyan-600 {
+    --text-opacity: 1;
+    color: rgb(8 145 178 / var(--text-opacity, 1));
+}
+
+.text-teal-600 {
+    --text-opacity: 1;
+    color: rgb(13 148 136 / var(--text-opacity, 1));
+}
+
+.text-emerald-600 {
+    --text-opacity: 1;
+    color: rgb(5 150 105 / var(--text-opacity, 1));
+}
+
+.text-green-600 {
+    --text-opacity: 1;
+    color: rgb(22 163 74 / var(--text-opacity, 1));
+}
+
+.text-lime-600 {
+    --text-opacity: 1;
+    color: rgb(101 163 13 / var(--text-opacity, 1));
+}
+
+.text-yellow-600 {
+    --text-opacity: 1;
+    color: rgb(202 138 4 / var(--text-opacity, 1));
+}
+
+.text-amber-600 {
+    --text-opacity: 1;
+    color: rgb(217 119 6 / var(--text-opacity, 1));
+}
+
+.text-orange-600 {
+    --text-opacity: 1;
+    color: rgb(234 88 12 / var(--text-opacity, 1));
+}
+
+.text-red-600 {
+    --text-opacity: 1;
+    color: rgb(220 38 38 / var(--text-opacity, 1));
+}
+
+.text-gray-600 {
+    --text-opacity: 1;
+    color: rgb(75 85 99 / var(--text-opacity, 1));
+}
+
+.text-gray-800 {
+    --text-opacity: 1;
+    color: rgb(31 41 55 / var(--text-opacity, 1));
+}
+
+/* === Прозорість 80% === */
+.text-blue-800 {
+    --text-opacity: 1;
+    color: rgb(30 64 175 / var(--text-opacity, 1));
+}
+
+.text-green-800 {
+    --text-opacity: 1;
+    color: rgb(22 101 52 / var(--text-opacity, 1));
+}
+
+.text-purple-800 {
+    --text-opacity: 1;
+    color: rgb(107 33 168 / var(--text-opacity, 1));
+}
+
+
+
+
+

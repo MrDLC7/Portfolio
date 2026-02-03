@@ -1,0 +1,103 @@
+/* ===  Утиліти для розміру тексту  ===  */
+/* === Малий ===  */
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-sm2 {
+    font-size: 0.875rem;
+    line-height: 2rem;
+}
+
+/* === Середній ===  */
+.text-md {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* === Великий ===  */
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+/* === Дуже великий ===  */
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.85rem;
+}
+
+/* === Надвеликий ===  */
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-3xl {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+/* === Супервеликий ===  */
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+
+:root {
+    --height--line: 0.125rem;
+}
+
+/* ===  Утиліти для висоти елементів  ===  */
+.h-1 {
+    height: var(--height--line);
+}
+.h-2 {
+    height: 0.5rem;
+}
+
+.h-3 {
+    height: 0.75rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.h-12 {
+    height: 3rem;
+}
+
+/* ===  Утиліти для міжрядкового інтервалу  ===  */
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+/* ===  Утиліти для сімейства шрифтів  ===  */
+.text-serif {
+    font-family: var(--font-family-accent);
+}
+
+/* ===  Утиліти для стилю шрифту  ===  */
+.text-sans {
+    font-family: var(--font-family-base);
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+/* ===  Розміри заголовків  ===  */
+.h1 {
+    font-size: 40px;
+}
+
+.h3 {
+    font-size: 25px;
+}
+
+.h6 {
+    font-size: 16px;
+}

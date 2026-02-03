@@ -1,0 +1,131 @@
+/* === Анімація плавної появи елементів === */
+@keyframes fadeInOpacity {
+    from {
+        /* Початкова прозорість — елемент повністю невидимий */
+        opacity: 0;
+    }
+
+    to {
+        /* Кінцева прозорість — елемент повністю видно */
+        opacity: 1;
+    }
+
+}
+@keyframes fadeOutOpacity {
+    from {
+        /* Початкова прозорість — елемент повністю невидимий */
+        opacity: 1;
+    }
+
+    to {
+        /* Кінцева прозорість — елемент повністю видно */
+        opacity: 0;
+    }
+
+}
+
+/* === Анімація трясіння (ефект "shake") === */
+@keyframes shake {
+    0% {
+        transform: rotate(0deg); /* Початкова позиція без зсуву та нахилу */
+    }
+
+    25% {
+        transform: rotateY(40deg) rotate(10deg); /* Повернення у вихідну позицію */
+    }
+
+    50% {
+        transform: rotate(0deg); /* Повернення у вихідну позицію */
+    }
+
+    75% {
+        transform: rotateY(40deg) rotate(-10deg); /* Повернення у вихідну позицію */
+    }
+
+    100% {
+        transform: rotate(0deg); /* Повернення у вихідну позицію */
+    }
+}
+
+/* === Анімація горизонтального руху вверх === */
+@keyframes scrollTop {
+    to {
+        /* Зсув елемента вверх на 100px від початкової позиції */
+        top: -200px;
+    }
+}
+
+/* === Анімація горизонтального руху вниз === */
+@keyframes scrollBottom {
+    to {
+        /* Зсув елемента вниз на 100px від початкової позиції */
+        bottom: -200px;
+    }
+}
+
+/* === Анімація горизонтального руху вліво === */
+@keyframes scrollLeft {
+    to {
+        /* Зсув елемента вліво на 100px від початкової позиції */
+        left: -200px;
+    }
+}
+
+/* === Анімація горизонтального руху вправо === */
+@keyframes scrollRight {
+    to {
+        /* Зсув елемента вправо на 100px від початкової позиції */
+        right: -200px;
+    }
+}
+
+/* === Анімація обертання на 360 градусів === */
+@keyframes anim-rotate {
+    0% {
+        /* Початкове положення — без обертання */
+        transform: rotate(0deg);
+    }
+
+    100% {
+        /* Повне обертання по колу */
+        transform: rotate(360deg);
+    }
+}
+
+/* === Клас поступової появи елемента === */
+.fade-in {
+    animation: fadeInOpacity 3s ease-out forwards;
+}
+.fade-out {
+    animation: fadeOutOpacity 3s ease-out forwards;
+}
+
+/* === Клас струшування елемента === */
+.shake-in {
+    animation: shake 4.5s linear infinite;
+}
+
+/* === Клас анімації вгору === */
+.scrollTop {
+    animation: scrollTop 40s linear infinite;
+}
+
+/* === Клас анімації вниз === */
+.scrollBottom {
+    animation: scrollBottom 40s linear infinite;
+}
+
+/* === Клас анімації вліво === */
+.scrollLeft {
+    animation: scrollLeft 40s linear infinite;
+}
+
+/* === Клас анімації вправо === */
+.scrollRight {
+    animation: scrollRight 40s linear infinite;
+}
+
+/* === Клас оберту в право (повний цикл) === */
+.rotate {
+    animation: anim-rotate 2s linear infinite;
+}

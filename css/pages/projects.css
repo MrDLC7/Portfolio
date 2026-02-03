@@ -1,0 +1,431 @@
+/* === CSS Variables for Projects Section === */
+:root {
+    /* Image sizes */
+    --project-img-size: 300px;
+    --project-img-display: block;
+    
+    /* Container */
+    --projects-max-width-container: 90vw;
+    --max-width-font-size: 1rem;
+    --max-width-h2-size: 1.6rem;
+    
+    /* Project elements */
+    --project-subtitle-size: 1rem;
+    --project-padding: 0 0.5rem;
+    --project-margin-bottom: 4rem;
+    --project-margin: 2rem 0;
+    --project-display: inline-block;
+    
+    /* Buttons */
+    --btn-padding-y: 0.6rem;
+    --btn-padding-x: 1.4rem;
+    --btn-font-size: 0.8rem;
+    
+    /* Layout */
+    --projects-padding-top: 0.1rem;
+    --px-40-padding: 0;
+    --mb-16-margin: 1rem;
+  }
+  
+  /* === Base Projects Styles === */
+  .img-wrapper {
+    position: relative;
+  }
+  
+  .img-wrapper::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 162, 255, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 1;
+    transition: background-color 0.3s;
+  }
+  
+  .img-wrapper:hover::after {
+    background-color: rgba(0, 162, 255, 0.2);
+  }
+  
+  .project-title {
+    display: none;
+  }
+  
+  .project {
+    padding: var(--project-padding);
+    margin: var(--project-margin);
+  }
+  
+  .project:not(:last-child) {
+    margin-bottom: var(--project-margin-bottom);
+  }
+  
+  .projects-container {
+    width: 100%;
+    justify-content: center;
+    grid-template-areas: 
+      "image1 content1"
+      "content2 image2"
+      "image3 content3"
+      "content4 image4";
+    place-items: center;
+  }
+  
+  /* Grid areas */
+  .image1 { grid-area: image1; }
+  .image2 { grid-area: image2; }
+  .image3 { grid-area: image3; }
+  .image4 { grid-area: image4; }
+  .content1 { grid-area: content1; }
+  .content2 { grid-area: content2; }
+  .content3 { grid-area: content3; }
+  .content4 { grid-area: content4; }
+  
+  /* Button styles */
+  .btn_ {
+    background-color: var(--col-violet-400);
+    color: var(--color-text-primary);
+    border: 1px solid var(--col-violet-400);
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn_:hover {
+    cursor: pointer;
+    background-color: #9270f7;
+    transform: translateY(-3px);
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  /* Slider styles */
+  .slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider:hover {
+    cursor: pointer;
+  }
+  
+  .slider:active {
+    cursor: grabbing;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  /* Slider controls */
+  .controls {
+    z-index: 9999;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .btn_nav {
+    opacity: 0.5;
+    background-color: var(--color-background-primary);
+    padding: 12px 0;
+    cursor: pointer;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon_nav {
+    width: 48px;
+    height: 48px;
+    fill: var(--color-text-primary);
+    transition: 0.3s;
+  }
+  
+  .btn_nav:hover {
+    opacity: 1;
+  }
+  
+  /* Slider dots */
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dots .dot {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .dots .dot.active {
+    background: #333;
+    transform: scale(1.2);
+  }
+  
+  /* Projects wrapper */
+  .projects-wrapper {
+    position: relative;
+  }
+  
+  /* Slider modes */
+  .slider-off {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+  }
+  
+  .slider-on {
+    position: absolute;
+    inset: 0;
+    visibility: visible;
+    opacity: 0;
+    pointer-events: auto;
+    z-index: 1;
+  }
+  
+  .mode-slider .slider-off {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
+  
+  .mode-slider .slider-on {
+    display: contents;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    
+  }
+  
+  /* Projects section */
+  #projects {
+    padding-bottom: var(--padding-y);
+    padding-top: var(--projects-padding-top);
+  }
+  
+  /* Container styles */
+  #projects .max-width-container {
+    max-width: var(--projects-max-width-container);
+    font-size: var(--max-width-font-size);
+  }
+
+  .project-subtitle {
+    font-size: var(--project-subtitle-size);
+  }
+  
+  /* Layout utilities */
+  img {
+    width: var(--project-img-size);
+    height: var(--project-img-size);
+    display: var(--project-img-display);
+  }
+  
+  .projects-container {
+    display: var(--project-display);
+  }
+  
+  .px-40 {
+    padding-left: var(--px-40-padding);
+    padding-right: var(--px-40-padding);
+  }
+  
+  .mb-16 {
+    margin-bottom: var(--mb-16-margin);
+  }
+  
+  /* === Responsive Breakpoints === */
+  
+  /* Extra small mobile (до 420px) */
+  @media (max-width: 420px) {
+    :root {
+      --max-width-h2-size: 1.8rem;
+      --max-width-font-size: 0.9rem;
+      --project-img-size: 300px;
+      --btn-padding-x: 1.2rem;
+      --mb-16-margin: 0.5rem;
+    }
+  }
+  
+  /* Small mobile (≥360px) */
+  @media (min-width: 360px) {
+    :root {
+      --project-img-size: 300px;
+      --max-width-h2-size: 1.6rem;
+      --project-padding: 0 0.5rem;
+      --px-40-padding: 0;
+      --mb-16-margin: 1rem;
+    }
+  }
+  
+  /* Medium mobile (≥480px) */
+  @media (min-width: 480px) {
+    :root {
+      --project-img-size: 400px;
+      --max-width-h2-size: 1.7rem;
+      --project-padding: 0 1rem;
+      --btn-padding-x: 1.7rem;
+    }
+  }
+  
+  /* Large mobile (≥600px) */
+  @media (min-width: 600px) {
+    :root {
+      --project-img-size: 450px;
+      --max-width-h2-size: 1.7rem;
+      --btn-font-size: 0.8rem;
+      --mb-16-margin: 2rem;
+      --projects-padding-top: 0.1rem;
+    }
+  }
+  
+  /* Tablet portrait (≥768px) */
+  @media (min-width: 768px) {
+    :root {
+      --project-img-size: 650px;
+      --max-width-h2-size: 1.8rem;
+      --project-padding: 0 3rem;
+      --project-display: inline-block;
+      --project-subtitle-display: none;
+      --btn-font-size: 0.9rem;
+      --projects-padding-top: 0rem;
+    }
+    
+    .project-subtitle {
+      display: var(--project-subtitle-display);
+    }
+  }
+  
+  /* Small desktop / Tablet (≥1024px) */
+  @media (min-width: 1024px) {
+    :root {
+      --project-img-size: 500px;
+      --projects-max-width-container: 54rem;
+      --max-width-font-size: 1rem;
+      --max-width-h2-size: 2rem;
+      --project-subtitle-size: 1.2rem;
+      --project-display: grid;
+      --project-padding: 1rem;
+      --btn-font-size: 0.9rem;
+      --btn-padding-y: 0.7rem;
+      --btn-padding-x: 1.7rem;
+      --project-subtitle-display: block;
+      --project-margin-bottom: 0;
+      --project-margin: 0;
+    }
+    
+    .project-subtitle {
+      display: var(--project-subtitle-display);
+    }
+  }
+  
+  /* Medium desktop / Tablet landscape (≥1280px) */
+  @media (min-width: 1280px) {
+    :root {
+      --project-img-size: 550px;
+      --projects-max-width-container: 64rem;
+      --max-width-font-size: 1.2rem;
+      --max-width-h2-size: 2.2rem;
+      --project-subtitle-size: 1.4rem;
+      --project-padding: 2rem;
+      --btn-font-size: 1rem;
+      --btn-padding-y: 0.8rem;
+      --btn-padding-x: 1.8rem;
+    }
+  }
+  
+  /* Standard desktop (≥1440px) */
+  @media (min-width: 1440px) {
+    :root {
+      --project-img-size: 600px;
+      --projects-max-width-container: 72rem;
+      --max-width-font-size: 1.3rem;
+      --max-width-h2-size: 2.2rem;
+      --project-subtitle-size: 1.7rem;
+      --btn-font-size: 1.1rem;
+      --btn-padding-y: 0.9rem;
+      --btn-padding-x: 2rem;
+    }
+  }
+  
+  /* Laptop / Desktop (≥1600px) */
+  @media (min-width: 1600px) {
+    :root {
+      --project-img-size: 700px;
+      --projects-max-width-container: 84rem;
+      --max-width-font-size: 1.5rem;
+      --max-width-h2-size: 2.5rem;
+      --project-subtitle-size: 1.8rem;
+      --btn-font-size: 1.2rem;
+      --btn-padding-y: 1rem;
+      --btn-padding-x: 2rem;
+    }
+  }
+  
+  /* Full HD / Large desktop (≥1920px) */
+  @media (min-width: 1920px) {
+    :root {
+      --project-img-size: 800px;
+      --projects-max-width-container: 100rem;
+      --max-width-font-size: 1.6rem;
+      --max-width-h2-size: 2.75rem;
+      --project-subtitle-size: 2.3rem;
+      --btn-font-size: 1.4rem;
+      --btn-padding-y: 1rem;
+      --btn-padding-x: 2.5rem;
+    }
+  }
+  
+  /* Ultra HD / 4K (≥2560px) */
+  @media (min-width: 2560px) {
+    :root {
+      --project-img-size: 900px;
+      --projects-max-width-container: 110rem;
+      --max-width-font-size: 1.8rem;
+      --max-width-h2-size: 4rem;
+      --project-subtitle-size: 2.5rem;
+      --btn-font-size: 1.5rem;
+    }
+  }
+  
+  /* === Print styles === */
+  @media print {
+    .slider-wrapper,
+    .controls,
+    .dots,
+    .btn_,
+    .btn_nav {
+      display: none;
+    }
+    
+    .projects-container {
+      display: block;
+    }
+    
+    .img-wrapper::after {
+      display: none;
+    }
+    
+    .project-title {
+      display: block;
+    }
+  }

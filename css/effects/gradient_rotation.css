@@ -1,0 +1,14 @@
+/* === Обертання елемента === */
+.rotation::before {
+    content: '';                    /* Необхідно для відображення псевдоелементу */
+    position: absolute;             /* Щоб width/height працювали незалежно від вмісту */
+    /* top: -100%;                  /* Для створення обертання навколо центру */
+    /* left: 25%;                   /* Для створення обертання навколо центру */
+    width: 300%;                    /* Щоб градієнт був достатньо великим для обертання */
+    height: 300%;                   /* Щоб градієнт був достатньо великим для обертання */
+    background-image: linear-gradient(180deg, 
+                    var(--gradient-rotation-start), 
+                    var(--gradient-rotation-end)); 
+    animation: anim-rotate 2s linear infinite;          /* АНІМАЦІЯ: обертання градієнта */
+    z-index: 1;                                         /* Щоб ::before був під ::after */
+}

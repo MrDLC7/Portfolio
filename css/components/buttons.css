@@ -1,0 +1,78 @@
+/* === Змінні для кнопки === */
+:root {
+    --bg-color-btn: rgb(225, 29, 72);                                    /* Основний колір кнопки */
+    --bg-color-btn-rgb: 225 29 72;                              /* RGB значення для обчислень */
+    --bs-color-btn: rgb(var(--bg-color-btn-rgb) / 0.4);           /* 40% прозорості */
+    --bs-color-btn-hover: rgb(var(--bg-color-btn-rgb) / 0.25);    /* 25% прозорості */
+}
+/* 102 163 120
+162 193 148 */
+/* === Базові стилі для всіх <button> === */
+button {
+    font-size: var(--btn-font-size);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    letter-spacing: 0.5px;
+    display: inline-block;          /* Кнопка займає стільки місця, скільки потрібно */
+    padding: 0;                     /* Скидаємо внутрішні відступи браузера */
+    border: none;                   /* Прибираємо стандартну рамку */
+    background: none;               /* Скидаємо стандартний фон */
+    cursor: pointer;                /* Змінюємо курсор при наведенні */
+    color: inherit;                 /* Наслідуємо колір тексту від батьківського елемента */
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: transform 0.1s ease-in-out;
+}
+
+/* === Контейнер для кнопок === */
+.btn-container {
+    margin-top: 10px;               /* Відступ зверху для групи кнопок */
+}
+
+/* === Стилізація кнопки === */
+.btn {
+    font-weight: 600;               /* Напівжирний текст */
+    text-decoration: none;          /* Прибираємо підкреслення */
+    
+    background-color: var(--bg-color-btn);      /* Основний фон кнопки */
+    color: var(--color-text-light);                /* Колір тексту */
+    
+    font-size: var(--btn-font-size);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    margin: 10px;                   /* Зовнішній відступ */
+    border-radius: 6px;             /* Закруглені кути */
+    
+    /* Тіньова композиція (багаторівнева, для об’єму та світіння) */
+    box-shadow: 0 10px 20px var(--bs-color-btn),
+                0 6px 6px var(--bs-color-btn),
+                0 0 10px -10px var(--bg-color-btn);
+    
+    /* Анімація появи (fade-in) */
+    animation: fadeInOpacity 2s 3s ease-out forwards;
+    /* Плавні переходи для hover-ефектів */
+    transition: animation 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* === Ефект при наведенні === */
+.btn:hover {
+    cursor: pointer;
+    transform: translateY(-3px);        /* Кнопка трохи піднімається */
+    
+    /* Змінена тінь для ефекту "натисканої" кнопки */
+    box-shadow: 0 14px 28px var(--bs-color-btn-hover),
+                0 10px 10px var(--bs-color-btn-hover),
+                0 0 15px -10px var(--bg-color-btn);
+}
+
+/* === Button Styles === */
+.dynamic-btn {
+    width: calc(var(--icon-size) * 1.5);
+    height: calc(var(--icon-size) * 1.5);
+}
+
+.dynamic-icon-btn {
+    width: calc(var(--icon-size));
+    height: calc(var(--icon-size));
+}

@@ -1,0 +1,342 @@
+/* === CSS Variables - Optimized === */
+:root {
+    /* Base colors - light theme */
+    --color-background-dark: #dbdbdb;
+    --color-text-light: #ffffff;
+    --color-accent-rose: #e11d48;
+    --color-background-primary: #121212;
+    --color-text-primary: #f3f3f0;
+    --color-neutral-gray: #383838;
+    --color-overlay-black-100: #0000001a;
+    --color-overlay-white-500: #ffffff80;
+    --color-overlay-black-500: #00000080;
+    --color-shadow-primary: #00000033;
+    --color-border-light: #f0f0f0;
+    --color-scroll-banner-item-text: #6e6e6e;
+    --color-scroll-banner-item-bg: rgba(133, 133, 133, 0.1);
+    
+    /* Font families */
+    --font-family-base: 'Poppins', sans-serif;
+    --font-family-accent: 'Playfair Display', serif;
+    
+    /* Gradients */
+    --gradient-main-start: #dbf0e6;
+    --gradient-main-end: #f7eaa3;
+    --gradient-rotation-start: #ff00c8;
+    --gradient-rotation-end: #00ffff;
+    
+    /* Scrollbar colors */
+    --color-scrollbar-item-one: #955656;
+    --color-scrollbar-item-two: #958156;
+    --color-scrollbar-item-three: #849556;
+    --color-scrollbar-item-four: #56957b;
+    --color-scrollbar-item-five: #569195;
+    --color-scrollbar-item-six: #565795;
+    --color-scrollbar-item-seven: #95567d;
+    
+    /* Header/Footer sizes - Mobile first */
+    --header-h3-size: 1.2rem;
+    --header-div-size: 1rem;
+    --footer-h6-size: 0.7rem;
+    --active-font-size: 1rem;
+    --button-font-size: 0.8rem;
+    --button-padding-y: 0.6rem;
+    --button-padding-x: 1.6rem;
+    --span-padding-y: 0.75rem;
+    --span-padding-x: 1.25rem;
+    --header-padding-top: 15px;
+    --header-padding-bottom: 15px;
+    
+    /* Layout */
+    --container-header-padding: 0 3rem;
+    --header-gap: 1.5rem;
+    --link-hover-height: 1px;
+    --section-padding-bottom: 4rem;
+
+    /* Icons size */
+    --icon-size: 24px;
+    --padding-top: 80px;
+    --padding-bottom: 100px;
+    --padding-right: 5px;
+    
+    /* Sidebar */
+    --sidebar-width: 250px;
+    --sidebar-padding: 20px 30px;
+    
+    /* Footer */
+    --footer-height: 150px;
+    --footer-padding: 100px;
+
+    /* Other */
+    --scroll-padding-top: 6rem;
+    --gap-50: 3rem;
+    --margin-top-project-technogies: 1rem;
+  }
+  
+  /* === Dark Theme Variables === */
+  .dark-theme {
+    --color-background-dark: #0c0a09;
+    --color-text-light: #e2e8f0;
+    --color-background-primary: #f3f3f3;
+    --color-text-primary: #5f5f5f;
+    --color-neutral-gray: #e7e7e7;
+    --color-overlay-black-100: rgba(255, 255, 255, 0.9);
+    --color-overlay-white-500: rgba(0, 0, 0, 0.25);
+    --color-shadow-primary: rgb(0, 0, 0);
+    --color-border-light: rgba(255, 255, 255, 0.9);
+    --color-overlay-black-500: #ffffff80;
+    --color-scroll-banner-item-text: #ffffff;
+    --color-scroll-banner-item-bg: rgba(255, 255, 255, 0.1);
+    --gradient-main-start: #4d4649;
+    --gradient-main-end: #387b94;
+    --color-scrollbar-item-one: #dd8f8f;
+    --color-scrollbar-item-two: #e5c98a;
+    --color-scrollbar-item-three: #c8e084;
+    --color-scrollbar-item-four: #7dd6b1;
+    --color-scrollbar-item-five: #88d4da;
+    --color-scrollbar-item-six: #9a9ce0;
+    --color-scrollbar-item-seven: #db81b9;
+  }
+  
+  /* === Base Styles === */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {    
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding-top);
+    letter-spacing: 0.5px;
+    min-width: 480px;
+    min-height: 100%;
+  }
+  
+  body {
+    font-family: var(--font-family-base);
+    background: linear-gradient(to right, var(--gradient-main-start), var(--gradient-main-end));
+  }
+  
+  body:not(.ready) {
+    visibility: hidden !important;
+  }
+
+  .gap-50-main {   
+    gap: var(--gap-50);
+  }
+
+  .mt-6 {
+    margin-top: var(--margin-top-project-technogies);
+  }
+  
+  .p-6 {
+    padding: var(--span-padding-y) var(--span-padding-x);
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  .unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+  
+  /* === Typography & Links === */
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    padding: 0;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+  }
+  
+  /* === Layout === */
+  .main-section-wrap {
+    min-height: 100vh;
+    padding-top: 5rem;
+  }
+  
+  /* === Responsive Breakpoints === */
+  
+  /* Medium mobile (≥480px) - Default min-width already set in html */
+  
+  /* Large mobile (≥600px) */
+  @media (min-width: 600px) {
+    :root {
+      --header-h3-size: 1.5rem;
+      --button-font-size: 1rem;
+      --button-padding-y: 0.9rem;
+      --button-padding-x: 1.8rem;
+      --span-padding-y: 0.9rem;
+      --span-padding-x: 1.375rem;
+    }
+  }
+  
+  /* Tablet portrait (≥768px) */
+  @media (min-width: 768px) {
+    :root {
+      --header-h3-size: 1.5rem;
+      --header-div-size: 1rem;
+      --active-font-size: 1.1rem;
+      --button-font-size: 1rem;
+      --button-padding-y: 1rem;
+      --button-padding-x: 2rem;
+      --header-gap: 2.75rem;
+      --gap-50: 4rem;
+      --scroll-padding-top: 8rem;
+      --margin-top-project-technogies: 1.5rem;
+      --span-padding-y: 0.9rem;
+      --span-padding-x: 1.375rem;
+    }
+  }
+  
+  /* Small desktop / Tablet (≥1024px) */
+  @media (min-width: 1024px) {
+    :root {
+      --header-h3-size: 1.6rem;
+      --header-div-size: 1.1rem;
+      --footer-h6-size: 0.9rem;
+      --active-font-size: 1.3rem;
+      --button-font-size: 1.1rem;
+      --button-padding-y: 1.25rem;
+      --button-padding-x: 2.25rem;
+      --container-header-padding: 0 3rem;
+      --header-gap: 3rem;
+      --link-hover-height: 1px;
+      --gap-50: 4.5rem;
+      --span-padding-y: 0.9rem;
+      --span-padding-x: 1.25rem;
+    }
+  }
+  
+  /* Medium desktop / Tablet landscape (≥1280px) */
+  @media (min-width: 1280px) {
+    :root {
+      --header-h3-size: 1.8rem;
+      --header-div-size: 1.125rem;
+      --footer-h6-size: 1rem;
+      --active-font-size: 1.4rem;
+      --button-font-size: 1.125rem;
+      --button-padding-y: 1.125rem;
+      --button-padding-x: 2.25rem;
+      --container-header-padding: 0 4rem;
+      --header-gap: 3.25rem;
+      --gap-50: 5rem;
+      --span-padding-y: 1.1rem;
+      --span-padding-x: 1.5rem;
+    }
+  }
+  
+  /* Standard desktop (≥1440px) */
+  @media (min-width: 1440px) {
+    :root {
+      --header-h3-size: 2rem;
+      --header-div-size: 1.3rem;
+      --footer-h6-size: 1.1rem;
+      --active-font-size: 1.5rem;
+      --button-font-size: 1.2rem;
+      --button-padding-y: 1.5rem;
+      --button-padding-x: 2.5rem;
+      --container-header-padding: 0 4rem;
+      --header-gap: 3.5rem;
+      --link-hover-height: 2px;      
+      --gap-50: 7rem;
+      --span-padding-y: 1.375rem;
+      --span-padding-x: 1.75rem;
+    }
+  }
+  
+  /* Laptop / Desktop (≥1600px) */
+  @media (min-width: 1600px) {
+    :root {
+      --header-h3-size: 2.1rem;
+      --header-div-size: 1.4rem;
+      --footer-h6-size: 1.2rem;
+      --active-font-size: 1.6rem;
+      --button-font-size: 1.3rem;
+      --button-padding-y: 2rem;
+      --button-padding-x: 3rem;
+      --container-header-padding: 0 5rem;
+      --header-gap: 4rem;
+      --link-hover-height: 3px;
+      --gap-50: 8rem;
+      --scroll-padding-top: 12rem;
+      --margin-top-project-technogies: 2rem;
+      --span-padding-y: 1.375rem;
+      --span-padding-x: 2.25rem;
+    }
+  }
+  
+  /* Full HD / Large desktop (≥1920px) */
+  @media (min-width: 1920px) {
+    :root {
+      --header-h3-size: 2.2rem;
+      --header-div-size: 1.5rem;
+      --footer-h6-size: 1.3rem;
+      --active-font-size: 1.75rem;
+      --button-font-size: 1.4rem;
+      --button-padding-y: 2rem;
+      --button-padding-x: 3rem;
+      --container-header-padding: 0 6rem;
+      --header-gap: 4rem;
+      --gap-50: 9rem;
+      --margin-top-project-technogies: 2.5rem;
+      --span-padding-y: 1.375rem;
+      --span-padding-x: 2.25rem;
+    }
+  }
+  
+  /* Ultra HD / 4K (≥2560px) */
+  @media (min-width: 2560px) {
+    :root {
+      --header-h3-size: 2.3rem;
+      --header-div-size: 1.6rem;
+      --footer-h6-size: 1.4rem;
+      --active-font-size: 2rem;
+      --button-font-size: 1.5rem;
+      --button-padding-y: 2rem;
+      --button-padding-x: 3rem;
+      --container-header-padding: 0 8rem;
+      --header-gap: 6rem;
+      --gap-50: 10rem;
+      --scroll-padding-top: 14rem;
+      --margin-top-project-technogies: 3rem;
+      --span-padding-y: 1.375rem;
+      --span-padding-x: 2.25rem;
+    }
+  }
+  
+  /* === Print styles === */
+  @media print {
+    html {
+      min-width: auto;
+    }
+    
+    .main-section-wrap {
+      padding-top: 0;
+    }
+    
+    .unselectable {
+      user-select: auto;
+    }
+  }

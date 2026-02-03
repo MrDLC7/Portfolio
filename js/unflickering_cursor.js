@@ -29,11 +29,13 @@ function screenParams() {
     const labelWidth = document.createElement('h5');
     const labelHeight = document.createElement('h5');
 
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
+    const windowWidth = window.innerWidth;   
+    const windowHeight = window.innerHeight;
+    const screenWidth = screen.width;
+    const screenHeight = screen.height;
 
-    labelWidth.textContent = `Ширина: ${screenWidth}px`;
-    labelHeight.textContent = `Висота: ${screenHeight}px`;
+    labelWidth.textContent = `Ширина: ${screenWidth}px === Ширина вікна: ${windowWidth}px`;
+    labelHeight.textContent = `Висота: ${screenHeight}px === Висота вікна: ${windowHeight}px`;
 
     containerMedia.appendChild(labelWidth);
     containerMedia.appendChild(labelHeight);

@@ -171,6 +171,9 @@
       --space-y-skills-h4-size: 0.9rem;
       --space-y-skills-span-size: 0.7rem;
       --h-3-height: 0.55rem;
+      --grid-cols-skills: 2;
+      --skills-grid-2-display: block;
+      --skills-grid-3-display: none;
     }
   }
   
@@ -179,12 +182,9 @@
     :root {
       --card-main-width: 1000px;
       --max-w-6xl: 50rem;
-      --grid-cols-skills: 2;
       --py-10-top: 1.3rem;
       --py-10-bottom: 1.3rem;
       --gap-between: 2rem;
-      --skills-grid-2-display: block;
-      --skills-grid-3-display: none;
     }
   }
   
@@ -199,6 +199,9 @@
       --space-y-skills-h3-size: 1.2rem;
       --space-y-skills-h4-size: 0.9rem;
       --space-y-skills-span-size: 0.7rem;
+      --grid-cols-skills: 3;
+      --skills-grid-2-display: none;
+      --skills-grid-3-display: block;
     }
   }
   
@@ -209,7 +212,7 @@
       --gap-between: 2.5rem;
     }
   }
-  
+
   /* Medium desktop / Tablet landscape (≥1280px) */
   @media (min-width: 1280px) {
     :root {
@@ -220,13 +223,10 @@
       --py-10-top: 1.5rem;
       --py-10-bottom: 1.5rem;
       --gap-between: 3rem;
-      --grid-cols-skills: 3;
       --space-y-skills-h3-size: 1.3rem;
       --space-y-skills-h4-size: 1rem;
       --space-y-skills-span-size: 0.8rem;
       --h-3-height: 0.55rem;
-      --skills-grid-2-display: none;
-      --skills-grid-3-display: block;
     }
   }
   

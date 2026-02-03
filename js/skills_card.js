@@ -65,7 +65,7 @@ function moveContainerBasedOnScreen() {
         grid4_4.appendChild(cards.item(arr_skills_4[id] - 1));
       }
     }
-  } else if (screenWidth >= 1280 && currentParent === 3) {
+  } else if (screenWidth >= 1024 && currentParent === 3) {
     if (grid3.children.length > 0) return; // Якщо вже переміщено, виходимо
 
     [grid3_1, grid3_2, grid3_3].forEach(container => {
@@ -83,7 +83,7 @@ function moveContainerBasedOnScreen() {
         grid3_3.appendChild(cards.item(arr_skills_3[id] - 1));
       }
     }
-  } else if (screenWidth < 1280 && currentParent === 2) {
+  } else if (screenWidth < 1024 && currentParent === 2) {
     if (grid2.children.length > 0) return; // Якщо вже переміщено, виходимо
 
     [grid2_1, grid2_2].forEach(container => {

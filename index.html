@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
-        <title>Моє портфоліо</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes, viewport-fit=cover" />
+        <title>My portfolio</title>
         <link rel="stylesheet" href="css/pages/style.css" />
     </head>
 
     <body>
         <div class="main-section-wrap flex flex-col justify-between">
-            <!-- Верхня навігаційна панель -->
+            <!-- Top navigation bar -->
             <header class="header">
                 <div class="container-header flex justify-between items-center gap-15 flex-wrap">
                     <a id="portfolio" class="link-hover" onclick="location.href='#main'">
-                        <h3 class="h3 font-light text-black"><span class="text-anim">Портфоліо</span></h3>
+                        <h3 class="h3 font-light text-black"><span class="text-anim"><b>Portfolio</b></span></h3>
                     </a>
 
-                    <!-- Навігація -->
+                    <!-- Navigation -->
                     <nav class="flex gap-50 font-semibold">
                         <!-- Бокове меню для мобільних версій -->
                         <ul class="sidebar flex-col align-center">
@@ -27,27 +27,27 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li><a onclick="location.href='#aboutme'" class="navbar-link">Про мене</a></li>
-                            <li><a onclick="location.href='#skills'" class="navbar-link">Навички</a></li>
-                            <li><a onclick="location.href='#projects'" class="navbar-link">Проекти</a></li>
-                            <li><a onclick="location.href='#contacts'" class="navbar-link">Контакти</a></li>
+                            <li><a onclick="location.href='#aboutme'" class="navbar-link">About Me</a></li>
+                            <li><a onclick="location.href='#skills'" class="navbar-link">Skills</a></li>
+                            <li><a onclick="location.href='#projects'" class="navbar-link">Projects</a></li>
+                            <li><a onclick="location.href='#contacts'" class="navbar-link">Contacts</a></li>
                         </ul>
 
-                        <!-- Основне меню -->
-                        <div class="my-auto"><a onclick="location.href='#aboutme'" class="hide-on-mobile link-hover item-anim text-black font-medium">Про мене</a></div>
-                        <div class="my-auto"><a onclick="location.href='#skills'" class="hide-on-mobile link-hover item-anim text-black font-medium">Навички</a></div>
-                        <div class="my-auto"><a onclick="location.href='#projects'" class="hide-on-mobile link-hover item-anim text-black font-medium">Проекти</a></div>
-                        <div class="my-auto"><a onclick="location.href='#contacts'" class="hide-on-mobile link-hover item-anim text-black font-medium">Контакти</a></div>
+                        <!-- Main menu -->
+                        <div class="my-auto"><a onclick="location.href='#aboutme'" class="hide-on-mobile link-hover item-anim text-black font-medium">About Me</a></div>
+                        <div class="my-auto"><a onclick="location.href='#skills'" class="hide-on-mobile link-hover item-anim text-black font-medium">Skills</a></div>
+                        <div class="my-auto"><a onclick="location.href='#projects'" class="hide-on-mobile link-hover item-anim text-black font-medium">Projects</a></div>
+                        <div class="my-auto"><a onclick="location.href='#contacts'" class="hide-on-mobile link-hover item-anim text-black font-medium">Contacts</a></div>
 
-                        <!-- Кнопка "бургер" для мобільних версій для відкриття бокового меню -->
+                        <!-- Mobile burger button to open side menu -->
                         <div id="show-sidebar-menu" class="my-auto">
-                            <a class="svg-icon-color">
+                            <a class="svg-icon-color item-anim">
                                 <svg class="svg-icon flex items-center" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
-                                    <!-- Верхня лінія -->
+                                    <!-- Top line -->
                                     <path id="top-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16"></path>
-                                    <!-- Середня лінія -->
+                                    <!-- Middle line -->
                                     <path id="middle-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16"></path>
-                                    <!-- Нижня лінія -->
+                                    <!-- Bottom line -->
                                     <path id="bottom-line" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 18h16"></path>
                                 </svg>
                             </a>
@@ -56,15 +56,17 @@
                 </div>
             </header>
 
-            <!-- Основний контент -->
+            <!-- Main content -->
             <main class="flex justify-center flex-col items-center hidden gap-50-main py-20">
+                
+                <!-- Introduction sectoction -->
                 <section id="main" class="flex justify-center items-center hidden">
-                    <!-- Аватарка -->
+                    <!-- Avatar -->
                     <div class="image-container item-anim">
                         <img class="shake" src="img/logo.jpg" alt="Аватар" width="300px" loading="lazy" />
                     </div>
 
-                    <!-- Інформаційний блок -->
+                    <!-- Information container -->
                     <div class="info">
                         <div class="container-main">
                             <h1 class="text-center item-anim">
@@ -77,7 +79,7 @@
                             </p>
                         </div>
 
-                        <!-- Список навичок -->
+                        <!-- List skills -->
                         <div class="items">
                             <div class="items-wrapper item-anim">
                                 <div class="item item1"><span>FrontEnd</span></div>
@@ -90,626 +92,624 @@
                             </div>
                         </div>
 
-                        <!-- Деталі -->
+                        <!-- Button details -->
                         <div class="btn-container flex justify-center item-anim">
                             <a class="btn" onclick="location.href='#aboutme'">
-                                <h3><span>More detailed</span></h3>
+                                <h3><span>Details</span></h3>
                             </a>
                         </div>
                     </div>
                 </section>
 
+                <!-- About me section -->
                 <section id="aboutme">
                     <div class="max-w-6xl mx-auto px-4">
                         <div class="text-center mb-16 item-anim">
-                            <h2 class="font-bold mb-4">Про мене</h2>
+                            <h2 class="font-bold mb-4">About Me</h2>
                             <div class="w-36 h-1 bg-sky-600 mx-auto mb-8"></div>
                         </div>
 
                         <div class="grid grid-cols-about gap-between">
                             <div class="space-y-6 item-anim">
                                 <p class="text-justify">
-                                    Я — <strong>Full Stack</strong> розробник із глибоким розумінням принципів чистого коду, архітектури та сучасних підходів до створення програмних рішень. Маю досвід
-                                    роботи з повним циклом розробки — від прототипування інтерфейсів до реалізації бекенд, інтеграції баз даних та деплойменту застосунків. Створюю адаптивні та швидкі
-                                    вебзастосунки. Також маю досвід розробки десктопних застосунків і роботи з вбудованими рішеннями. А також використовую інструменти для налагодження CI/CD-процесів.
+                                    I am a <strong>Full Stack</strong> developer with a deep understanding of the principles of clean code, architecture, and modern approaches to creating software
+                                    solutions. I have experience working with the full development cycle - from interface prototyping to backend implementation, database integration, and application
+                                    deployment. I create responsive and fast web applications. I also have experience developing desktop applications and working with embedded solutions. I also use
+                                    tools to debug CI/CD processes.
                                 </p>
                             </div>
-
                             <div class="space-y-6 item-anim">
                                 <p class="text-justify">
-                                    Активно застосовую бази даних для ефективного керування даними. Дотримуюся принципів проектування, практикую методогології з орієнтацією на масштабованість і чисту
-                                    архітектуру. Маю аналітичне мислення, увагу до деталей і прагнення створювати код, який не лише працює, а й легко підтримується.<br /><br />
-                                    <strong>Люблю, коли код не просто працює — а працює красиво, швидко і зрозуміло.</strong>
+                                    I actively use databases for effective data management. I adhere to design principles, practice methodologies with a focus on scalability and clean architecture. I
+                                    have an analytical mindset, attention to detail, and a desire to create code that not only works, but is also easy to maintain.<br /><br />
+                                    <strong>I love it when code doesn't just work — it works beautifully, quickly, and clearly.</strong>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
+                <!-- Skills section -->
                 <section id="skills">
                     <div class="max-width-container mx-auto px-4 mb-8">
                         <div class="text-center mb-16 item-anim">
-                            <h2 class="font-bold mb-4">Мої навички</h2>
+                            <h2 class="font-bold mb-4">My skills</h2>
                             <div class="w-36 h-1 bg-teal-600 mx-auto mb-8"></div>
                         </div>
-
-                        <!-- <div class="skills-container none">
-                        </div> -->
-
                         <div class="grid grid-cols-skills gap-between skills-grid item-anim">
-                            <!-- Відображення в 2 колонки -->
+                            <!-- 2 column display -->
                             <div class="space-y-skills skills-grid-2 skills-grid-2_1">
-                            <div id="1" class="skills skill-card">
-                                <!-- Frontend -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-sky-400 rounded-top px-4">Frontend</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Languages</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">HTML</span>
-                                            <span class="text-rose-600 font-semibold">85%</span>
+                                <div id="1" class="skills skill-card">
+                                    <!-- Frontend -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-sky-400 rounded-top px-4">Frontend</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Languages</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">HTML</span>
+                                                <span class="text-rose-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-rose-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-rose-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">CSS</span>
+                                                <span class="text-pink-600 font-semibold">80%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width: 0%" data-width="80%"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">CSS</span>
-                                            <span class="text-pink-600 font-semibold">80%</span>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">JavaScript</span>
+                                                <span class="text-fuchsia-600 font-semibold">35%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-fuchsia-600 h-3 rounded-full" style="width: 0%" data-width="35%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width: 0%" data-width="80%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">TypeScript</span>
+                                                <span class="text-purple-600 font-semibold">25%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="25%"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">JavaScript</span>
-                                            <span class="text-fuchsia-600 font-semibold">35%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-fuchsia-600 h-3 rounded-full" style="width: 0%" data-width="35%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">TypeScript</span>
-                                            <span class="text-purple-600 font-semibold">25%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="25%"></div>
-                                        </div>
-                                    </div>
 
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Frameworks / Libraries</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Bootstrap</span>
-                                            <span class="text-violet-600 font-semibold">35%</span>
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Frameworks / Libraries</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Bootstrap</span>
+                                                <span class="text-violet-600 font-semibold">35%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-violet-600 h-3 rounded-full" style="width: 0%" data-width="35%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-violet-600 h-3 rounded-full" style="width: 0%" data-width="35%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Vue.js</span>
+                                                <span class="text-indigo-600 font-semibold">15%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-indigo-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Vue.js</span>
-                                            <span class="text-indigo-600 font-semibold">15%</span>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">React</span>
+                                                <span class="text-blue-600 font-semibold">15%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-indigo-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">React</span>
-                                            <span class="text-blue-600 font-semibold">15%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
-                                        </div>
-                                    </div>
 
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Assembly tools</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Vite</span>
-                                            <span class="text-sky-600 font-semibold">25%</span>
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Assembly tools</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Vite</span>
+                                                <span class="text-sky-600 font-semibold">25%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-sky-600 h-3 rounded-full" style="width: 0%" data-width="25%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-sky-600 h-3 rounded-full" style="width: 0%" data-width="25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Webpack</span>
-                                            <span class="text-cyan-600 font-semibold">15%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-cyan-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Webpack</span>
+                                                <span class="text-cyan-600 font-semibold">15%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-cyan-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="2" class="skills skill-card">
-                                <!-- Backend -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-pink-400 rounded-top px-4">Backend</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Languages / Platforms</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">C#</span>
-                                            <span class="text-teal-600 font-semibold">95%</span>
+                                <div id="2" class="skills skill-card">
+                                    <!-- Backend -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-pink-400 rounded-top px-4">Backend</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Languages / Platforms</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">C#</span>
+                                                <span class="text-teal-600 font-semibold">95%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-teal-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-teal-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Python</span>
+                                                <span class="text-emerald-600 font-semibold">65%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-emerald-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Python</span>
-                                            <span class="text-emerald-600 font-semibold">65%</span>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Node.js</span>
+                                                <span class="text-green-600 font-semibold">15%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-green-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-emerald-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Node.js</span>
-                                            <span class="text-green-600 font-semibold">15%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-green-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
-                                        </div>
-                                    </div>
 
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Frameworks</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">ASP.NET Core</span>
-                                            <span class="text-lime-600 font-semibold">85%</span>
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Frameworks</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">ASP.NET Core</span>
+                                                <span class="text-lime-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-lime-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-lime-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Express.js</span>
+                                                <span class="text-yellow-600 font-semibold">15%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-yellow-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Express.js</span>
-                                            <span class="text-yellow-600 font-semibold">15%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-yellow-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
-                                        </div>
-                                    </div>
 
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">ORM</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">EF Core</span>
-                                            <span class="text-amber-600 font-semibold">85%</span>
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">ORM</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">EF Core</span>
+                                                <span class="text-amber-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-amber-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-amber-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
-                                        </div>
-                                    </div>
 
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Testing</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">xUnit</span>
-                                            <span class="text-orange-600 font-semibold">75%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-orange-600 h-3 rounded-full" style="width: 0%" data-width="75%"></div>
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Testing</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">xUnit</span>
+                                                <span class="text-orange-600 font-semibold">75%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-orange-600 h-3 rounded-full" style="width: 0%" data-width="75%"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="3" class="skills skill-card">
-                                <!-- Desktop & Embedded -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-fuchsia-400 rounded-top px-4">Desktop & Embedded</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Desktop Development</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">MAUI</span>
-                                            <span class="text-rose-600 font-semibold">93%</span>
+                                <div id="3" class="skills skill-card">
+                                    <!-- Desktop & Embedded -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-fuchsia-400 rounded-top px-4">Desktop & Embedded</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Desktop Development</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">MAUI</span>
+                                                <span class="text-rose-600 font-semibold">93%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-rose-600 h-3 rounded-full" style="width: 0%" data-width="93%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-rose-600 h-3 rounded-full" style="width: 0%" data-width="93%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">WPF</span>
+                                                <span class="text-pink-600 font-semibold">91%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width: 0%" data-width="91%"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">WPF</span>
-                                            <span class="text-pink-600 font-semibold">91%</span>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Windows Forms</span>
+                                                <span class="text-fuchsia-600 font-semibold">91%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-fuchsia-600 h-3 rounded-full" style="width: 0%" data-width="91%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width: 0%" data-width="91%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Windows Forms</span>
-                                            <span class="text-fuchsia-600 font-semibold">91%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-fuchsia-600 h-3 rounded-full" style="width: 0%" data-width="91%"></div>
-                                        </div>
-                                    </div>
 
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Embedded / Low-level</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">C</span>
-                                            <span class="text-purple-600 font-semibold">87%</span>
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Embedded / Low-level</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">C</span>
+                                                <span class="text-purple-600 font-semibold">87%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="87%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="87%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">C++</span>
+                                                <span class="text-violet-600 font-semibold">81%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-violet-600 h-3 rounded-full" style="width: 0%" data-width="81%"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">C++</span>
-                                            <span class="text-violet-600 font-semibold">81%</span>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Assembler</span>
+                                                <span class="text-indigo-600 font-semibold">61%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-indigo-600 h-3 rounded-full" style="width: 0%" data-width="61%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-violet-600 h-3 rounded-full" style="width: 0%" data-width="81%"></div>
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Hardware platforms</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Arduino</span>
+                                                <span class="text-blue-600 font-semibold">97%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 0%" data-width="97%"></div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Assembler</span>
-                                            <span class="text-indigo-600 font-semibold">61%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-indigo-600 h-3 rounded-full" style="width: 0%" data-width="61%"></div>
-                                        </div>
-                                    </div>
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Hardware platforms</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Arduino</span>
-                                            <span class="text-blue-600 font-semibold">97%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 0%" data-width="97%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Raspberry Pi</span>
-                                            <span class="text-sky-600 font-semibold">59%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-sky-600 h-3 rounded-full" style="width: 0%" data-width="59%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="4" class="skills skill-card">
-                                <!-- AI-Powered Development Tools -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-indigo-400 rounded-top px-4">AI-Powered Development Tools</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-size-main text-shadow-md text-color py-6 p-5"></h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Open AI / ChatGPT</span>
-                                            <span class="text-cyan-600 font-semibold">95%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-cyan-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">GitHub Copilot</span>
-                                            <span class="text-teal-600 font-semibold">95%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-teal-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Google Gemini</span>
-                                            <span class="text-emerald-600 font-semibold">95%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-emerald-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Anthropic Claude</span>
-                                            <span class="text-green-600 font-semibold">95%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-green-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Raspberry Pi</span>
+                                                <span class="text-sky-600 font-semibold">59%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-sky-600 h-3 rounded-full" style="width: 0%" data-width="59%"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div id="4" class="skills skill-card">
+                                    <!-- AI-Powered Development Tools -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-indigo-400 rounded-top px-4">AI-Powered Development Tools</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-size-main text-shadow-md text-color py-6 p-5"></h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Open AI / ChatGPT</span>
+                                                <span class="text-cyan-600 font-semibold">95%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-cyan-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">GitHub Copilot</span>
+                                                <span class="text-teal-600 font-semibold">95%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-teal-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Google Gemini</span>
+                                                <span class="text-emerald-600 font-semibold">95%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-emerald-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Anthropic Claude</span>
+                                                <span class="text-green-600 font-semibold">95%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-green-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="space-y-skills skills-grid-2 skills-grid-2_2">
-                            <div id="5" class="skills skill-card">
-                                 <!-- Databases -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-red-400 rounded-top px-4">Databases</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Relational DBMS</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">MySQL</span>
-                                            <span class="text-lime-600 font-semibold">85%</span>
+                                <div id="5" class="skills skill-card">
+                                    <!-- Databases -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-red-400 rounded-top px-4">Databases</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Relational DBMS</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">MySQL</span>
+                                                <span class="text-lime-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-lime-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-lime-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">PostgreSQL</span>
+                                                <span class="text-yellow-600 font-semibold">87%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-yellow-600 h-3 rounded-full" style="width: 0%" data-width="87%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Microsoft SQL Server</span>
+                                                <span class="text-amber-600 font-semibold">84%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-amber-600 h-3 rounded-full" style="width: 0%" data-width="84%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">SQLite</span>
+                                                <span class="text-orange-600 font-semibold">83%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-orange-600 h-3 rounded-full" style="width: 0%" data-width="83%"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">PostgreSQL</span>
-                                            <span class="text-yellow-600 font-semibold">87%</span>
+                                </div>
+                                <div id="6" class="skills skill-card">
+                                    <!-- Tools and DevOps -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-yellow-400 rounded-top px-4">Tools and DevOps</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Version control systems</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Git</span>
+                                                <span class="text-rose-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-rose-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-yellow-600 h-3 rounded-full" style="width: 0%" data-width="87%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">GitHub</span>
+                                                <span class="text-pink-600 font-semibold">83%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width: 0%" data-width="83%"></div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Containerization</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Docker</span>
+                                                <span class="text-fuchsia-600 font-semibold">65%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-fuchsia-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Cloud platforms</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Render</span>
+                                                <span class="text-purple-600 font-semibold">45%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="45%"></div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Development tools</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Postman</span>
+                                                <span class="text-violet-600 font-semibold">65%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-violet-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Swagger</span>
+                                                <span class="text-indigo-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-indigo-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Figma</span>
+                                                <span class="text-blue-600 font-semibold">15%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Blend</span>
+                                                <span class="text-sky-600 font-semibold">65%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-sky-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Microsoft SQL Server</span>
-                                            <span class="text-amber-600 font-semibold">84%</span>
+                                </div>
+                                <div id="7" class="skills skill-card">
+                                    <!-- IDE and Editors -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-blue-400 rounded-top px-4">IDE and Editors</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-size-main text-shadow-md text-color py-6 p-5"></h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">VS Code</span>
+                                                <span class="text-cyan-600 font-semibold">95%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-cyan-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-amber-600 h-3 rounded-full" style="width: 0%" data-width="84%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Visual Studio</span>
+                                                <span class="text-teal-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-teal-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">PyCharm</span>
+                                                <span class="text-emerald-600 font-semibold">45%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-emerald-600 h-3 rounded-full" style="width: 0%" data-width="45%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Android Studio</span>
+                                                <span class="text-green-600 font-semibold">45%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-green-600 h-3 rounded-full" style="width: 0%" data-width="45%"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">SQLite</span>
-                                            <span class="text-orange-600 font-semibold">83%</span>
+                                </div>
+                                <div id="8" class="skills skill-card">
+                                    <!-- Practices and Methodologies -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-teal-400 rounded-top px-4">Practices and Methodologies</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Architectural principles</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">OOP</span>
+                                                <span class="text-lime-600 font-semibold">90%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-lime-600 h-3 rounded-full" style="width: 0%" data-width="90%"></div>
+                                            </div>
                                         </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-orange-600 h-3 rounded-full" style="width: 0%" data-width="83%"></div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">SOLID</span>
+                                                <span class="text-yellow-600 font-semibold">90%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-yellow-600 h-3 rounded-full" style="width: 0%" data-width="90%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">DRY</span>
+                                                <span class="text-amber-600 font-semibold">75%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-amber-600 h-3 rounded-full" style="width: 0%" data-width="75%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">KISS</span>
+                                                <span class="text-orange-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-orange-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="text-xl text-shadow-md text-color py-6 p-5">Development processes</h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">CI/CD</span>
+                                                <span class="text-rose-600 font-semibold">65%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-rose-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Agile</span>
+                                                <span class="text-pink-600 font-semibold">73%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width: 0%" data-width="73%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">REST API</span>
+                                                <span class="text-fuchsia-600 font-semibold">85%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-fuchsia-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="9" class="skills skill-card">
+                                    <!-- Languages -->
+                                    <h3 class="text-center text-2xl text-shadow-md py-10 bg-green-400 rounded-top px-4">Languages</h3>
+                                    <div class="skills-container">
+                                        <h4 class="text-size-main text-shadow-md text-color py-6 p-5"></h4>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">Ukrainian</span>
+                                                <span class="text-purple-600 font-semibold">95%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mx-4 mb-skill-4">
+                                            <div class="flex justify-between mb-skill-2">
+                                                <span class="font-semibold text-gray-800">English</span>
+                                                <span class="text-violet-600 font-semibold">55%</span>
+                                            </div>
+                                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                                <div class="skill-bar bg-violet-600 h-3 rounded-full" style="width: 0%" data-width="55%"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="6" class="skills skill-card">
-                                <!-- Tools and DevOps -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-yellow-400 rounded-top px-4">Tools and DevOps</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Version control systems</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Git</span>
-                                            <span class="text-rose-600 font-semibold">85%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-rose-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">GitHub</span>
-                                            <span class="text-pink-600 font-semibold">83%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width: 0%" data-width="83%"></div>
-                                        </div>
-                                    </div>
 
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Containerization</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Docker</span>
-                                            <span class="text-fuchsia-600 font-semibold">65%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-fuchsia-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Cloud platforms</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Render</span>
-                                            <span class="text-purple-600 font-semibold">45%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="45%"></div>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Development tools</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Postman</span>
-                                            <span class="text-violet-600 font-semibold">65%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-violet-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Swagger</span>
-                                            <span class="text-indigo-600 font-semibold">85%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-indigo-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Figma</span>
-                                            <span class="text-blue-600 font-semibold">15%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-blue-600 h-3 rounded-full" style="width: 0%" data-width="15%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Blend</span>
-                                            <span class="text-sky-600 font-semibold">65%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-sky-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="7" class="skills skill-card">
-                                <!-- IDE and Editors -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-blue-400 rounded-top px-4">IDE and Editors</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-size-main text-shadow-md text-color py-6 p-5"></h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">VS Code</span>
-                                            <span class="text-cyan-600 font-semibold">95%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-cyan-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Visual Studio</span>
-                                            <span class="text-teal-600 font-semibold">85%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-teal-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">PyCharm</span>
-                                            <span class="text-emerald-600 font-semibold">45%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-emerald-600 h-3 rounded-full" style="width: 0%" data-width="45%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Android Studio</span>
-                                            <span class="text-green-600 font-semibold">45%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-green-600 h-3 rounded-full" style="width: 0%" data-width="45%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="8" class="skills skill-card">
-                                <!-- Practices and Methodologies -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-teal-400 rounded-top px-4">Practices and Methodologies</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Architectural principles</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">OOP</span>
-                                            <span class="text-lime-600 font-semibold">90%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-lime-600 h-3 rounded-full" style="width: 0%" data-width="90%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">SOLID</span>
-                                            <span class="text-yellow-600 font-semibold">90%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-yellow-600 h-3 rounded-full" style="width: 0%" data-width="90%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">DRY</span>
-                                            <span class="text-amber-600 font-semibold">75%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-amber-600 h-3 rounded-full" style="width: 0%" data-width="75%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">KISS</span>
-                                            <span class="text-orange-600 font-semibold">85%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-orange-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="text-xl text-shadow-md text-color py-6 p-5">Development processes</h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">CI/CD</span>
-                                            <span class="text-rose-600 font-semibold">65%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-rose-600 h-3 rounded-full" style="width: 0%" data-width="65%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Agile</span>
-                                            <span class="text-pink-600 font-semibold">73%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-pink-600 h-3 rounded-full" style="width: 0%" data-width="73%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">REST API</span>
-                                            <span class="text-fuchsia-600 font-semibold">85%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-fuchsia-600 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="9" class="skills skill-card">
-                                <!-- Languages -->
-                                <h3 class="text-center text-2xl text-shadow-md py-10 bg-green-400 rounded-top px-4">Languages</h3>
-                                <div class="skills-container">
-                                    <h4 class="text-size-main text-shadow-md text-color py-6 p-5"></h4>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">Ukrainian</span>
-                                            <span class="text-purple-600 font-semibold">95%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-purple-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="mx-4 mb-4">
-                                        <div class="flex justify-between mb-2">
-                                            <span class="font-semibold text-gray-800">English</span>
-                                            <span class="text-violet-600 font-semibold">55%</span>
-                                        </div>
-                                        <div class="w-full bg-gray-200 rounded-full h-3">
-                                            <div class="skill-bar bg-violet-600 h-3 rounded-full" style="width: 0%" data-width="55%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-
-                            <!-- Відображення в 3 колонки -->
+                            <!-- 3 column display -->
                             <div class="space-y-skills skills-grid-3 skills-grid-3_1"></div>
                             <div class="space-y-skills skills-grid-3 skills-grid-3_2"></div>
                             <div class="space-y-skills skills-grid-3 skills-grid-3_3"></div>
 
-                            <!-- Відображення в 4 колонки -->
+                            <!-- 4 column display -->
                             <div class="space-y-skills skills-grid-4 skills-grid-4_1"></div>
                             <div class="space-y-skills skills-grid-4 skills-grid-4_2"></div>
                             <div class="space-y-skills skills-grid-4 skills-grid-4_3"></div>
@@ -718,40 +718,42 @@
                     </div>
                 </section>
 
+                <!-- Projects section -->
                 <section id="projects">
                     <div class="max-width-container mx-auto">
                         <div class="text-center mx-auto">
                             <div class="text-center mb-16 item-anim">
-                                <h2 class="font-bold mb-4">Мої проекти</h2>
+                                <h2 class="font-bold mb-4">My projects</h2>
                                 <div class="w-36 h-1 bg-purple-600 mx-auto mb-8"></div>
                             </div>
-                            <!-- Кнопка для переходу в режим слайдів -->
+                            <!-- Button to switch to slide mode -->
                             <div class="flex justify-end slider-btn item-anim">
                                 <button class="btn_" onclick="showSliderMode()">
-                                    <h3><span id="slider_text_btn">Режим "Слайдер"</span></h3>
+                                    <h3><span id="slider_text_btn">Mode "Slider"</span></h3>
                                 </button>
                             </div>
                             <div class="projects-wrapper">
-                                <!-- Проекти -->
+                                <!-- Projects -->
                                 <div class="grid projects-container mx-auto pt-8 px-40 mb-16 slider-off">
-                                    <!-- Проект 1 -->
-                                    <h3 class="project-title mb-4 item-anim">Інтернет-магазин</h3>
+                                    <!-- Project 1 -->
+                                    <h3 class="project-title mb-4 item-anim">Online store</h3>
                                     <div class="img-wrapper image1 item-anim">
-                                        <img src="./img/projects/shop1.jpg" alt="Інтернет-магазин" loading="lazy" />
+                                        <img src="./img/projects/shop1.jpg" alt="Online store" loading="lazy" />
                                     </div>
                                     <div class="project content1 item-anim">
-                                        <h3 class="project-subtitle">Інтернет-магазин</h3>
+                                        <h3 class="project-subtitle">Online store</h3>
                                         <p class="project-description1 my-4">
-                                            Сучасний інтернет-магазин одягу з широким асортиментом чоловічого та жіночого одягу, зручним інтерфейсом і адаптивним дизайном. Магазин пропонує фільтрацію
-                                            товарів, детальні описи, швидку доставку й просту систему оформлення замовлення. Ідеальний приклад поєднання естетики, функціональності та зручності
-                                            користування.
+                                            Modern Online clothing store with a wide range of men's and women's clothing, 
+                                            a user-friendly interface and adaptive design. The store offers product filtering, 
+                                            detailed descriptions, fast delivery and a simple ordering system. A perfect example 
+                                            of combining aesthetics, functionality and ease of use.
                                         </p>
                                         <div class="btn-container flex justify-center">
                                             <a class="btn" onclick="">
-                                                <h3><span>Переглянути</span></h3>
+                                                <h3><span>Review</span></h3>
                                             </a>
                                         </div>
-                                        <!-- Список використаних технологій -->
+                                        <!-- List of technologies used -->
                                         <div class="flex gap-10 mt-6 justify-center">
                                             <span class="p-6 bg-blue-200 text-blue-600 rounded-full flex items-center justify-center">PHP</span>
                                             <span class="p-6 bg-green-200 text-green-600 rounded-full flex items-center justify-center">Python</span>
@@ -759,23 +761,25 @@
                                         </div>
                                     </div>
 
-                                    <!-- Проект 2 -->
-                                    <h3 class="project-title mb-4 item-anim">Чат</h3>
+                                    <!-- Project 2 -->
+                                    <h3 class="project-title mb-4 item-anim">Chat</h3>
                                     <div class="img-wrapper image2 item-anim">
-                                        <img src="./img/projects/chat1.jpg" alt="Чат" loading="lazy" />
+                                        <img src="./img/projects/chat1.jpg" alt="Chat" loading="lazy" />
                                     </div>
                                     <div class="project mb-16 content2 item-anim">
-                                        <h3 class="project-subtitle">Чат</h3>
+                                        <h3 class="project-subtitle">Chat</h3>
                                         <p class="project-description1 my-4">
-                                            Інтерактивний чат, створений для зручного спілкування в реальному часі. Підтримує приватні та групові розмови, надсилання повідомлень, емодзі, зображень і
-                                            сповіщення про активність користувачів. Має чистий інтерфейс, швидку синхронізацію та адаптивний дизайн для будь-яких пристроїв.
+                                            An interactive chat designed for convenient real-time communication. Supports 
+                                            private and group conversations, sending messages, emojis, images, and notifications 
+                                            about user activity. Has a clean interface, fast synchronization, and a responsive 
+                                            design for any device.
                                         </p>
                                         <div class="btn-container flex justify-center">
                                             <a class="btn" onclick="">
-                                                <h3><span>Переглянути</span></h3>
+                                                <h3><span>Review</span></h3>
                                             </a>
                                         </div>
-                                        <!-- Список використаних технологій -->
+                                        <!-- List of technologies used -->
                                         <div class="flex gap-10 mt-6 justify-center">
                                             <span class="p-6 bg-yellow-200 text-yellow-600 rounded-full flex items-center justify-center">JavaScript</span>
                                             <span class="p-6 bg-teal-200 text-teal-600 rounded-full flex items-center justify-center">Python</span>
@@ -783,23 +787,24 @@
                                         </div>
                                     </div>
 
-                                    <!-- Проект 3 -->
-                                    <h3 class="project-title mb-4 item-anim">Сайт</h3>
+                                    <!-- Project 3 -->
+                                    <h3 class="project-title mb-4 item-anim">Site</h3>
                                     <div class="img-wrapper image3 item-anim">
-                                        <img src="./img/projects/site2.jpg" alt="Сайт" loading="lazy" />
+                                        <img src="./img/projects/site2.jpg" alt="Site" loading="lazy" />
                                     </div>
                                     <div class="project mb-16 content3 item-anim">
-                                        <h3 class="project-subtitle">Сайт</h3>
+                                        <h3 class="project-subtitle">Site</h3>
                                         <p class="project-description1 my-4">
-                                            Сайт знайомств, створений для легкого пошуку нових знайомств і спілкування. Користувачі можуть створювати профілі, додавати фото, переглядати анкети,
-                                            ставити вподобання та вести особисті чати. Інтуїтивний інтерфейс і адаптивний дизайн забезпечують зручний досвід користування на будь-якому пристрої.
+                                            A dating site designed to make it easy to find new people and communicate. Users can create profiles, 
+                                            add photos, view profiles, like and have private chats. The intuitive interface and responsive design 
+                                            provide a convenient user experience on any device.
                                         </p>
                                         <div class="btn-container flex justify-center">
                                             <a class="btn" onclick="">
-                                                <h3><span>Переглянути</span></h3>
+                                                <h3><span>Review</span></h3>
                                             </a>
                                         </div>
-                                        <!-- Список використаних технологій -->
+                                        <!-- List of technologies used -->
                                         <div class="flex gap-10 mt-6 justify-center">
                                             <span class="p-6 bg-rose-200 text-rose-600 rounded-full flex items-center justify-center">HTML</span>
                                             <span class="p-6 bg-sky-200 text-sky-600 rounded-full flex items-center justify-center">CSS</span>
@@ -807,23 +812,24 @@
                                         </div>
                                     </div>
 
-                                    <!-- Проект 4 -->
-                                    <h3 class="project-title mb-4 item-anim">Система</h3>
+                                    <!-- Project 4 -->
+                                    <h3 class="project-title mb-4 item-anim">System</h3>
                                     <div class="img-wrapper image4 item-anim">
-                                        <img src="./img/projects/system2.jpg" alt="Система" loading="lazy" />
+                                        <img src="./img/projects/system2.jpg" alt="System" loading="lazy" />
                                     </div>
                                     <div class="project mb-16 content4 item-anim">
-                                        <h3 class="project-subtitle">Система</h3>
+                                        <h3 class="project-subtitle">System</h3>
                                         <p class="project-description1 my-4">
-                                            Система моніторингу, розроблена для відстеження стану об’єктів у реальному часі. Забезпечує зручне відображення даних у вигляді графіків, таблиць та
-                                            аналітичних звітів. Має гнучку панель керування, сповіщення про зміни та можливість налаштування під різні типи даних.
+                                            A monitoring system designed to track the status of objects in real time. Provides convenient data 
+                                            display in the form of graphs, tables and analytical reports. Has a flexible control panel, 
+                                            notifications about changes and the ability to configure for different types of data.
                                         </p>
                                         <div class="btn-container flex justify-center">
                                             <a class="btn" onclick="">
-                                                <h3><span>Переглянути</span></h3>
+                                                <h3><span>Review</span></h3>
                                             </a>
                                         </div>
-                                        <!-- Список використаних технологій -->
+                                        <!-- List of technologies used -->
                                         <div class="flex gap-10 mt-6 justify-center">
                                             <span class="p-6 bg-cyan-200 text-cyan-600 rounded-full flex items-center justify-center">React</span>
                                             <span class="p-6 bg-red-200 text-red-600 rounded-full flex items-center justify-center">Python</span>
@@ -851,24 +857,25 @@
 
                                         <div id="slider" class="slider pt-8">
                                             <div class="slide grid projects-container mx-auto">
-                                                <!-- Проект 1 -->
-                                                <h3 class="project-title mb-4">Інтернет-магазин</h3>
+                                                <!-- Project 1 -->
+                                                <h3 class="project-title mb-4">Online store</h3>
                                                 <div class="img-wrapper image1">
-                                                    <img src="./img/projects/shop1.jpg" alt="Інтернет-магазин" loading="lazy" />
+                                                    <img src="./img/projects/shop1.jpg" alt="Online store" loading="lazy" />
                                                 </div>
                                                 <div class="project content1">
-                                                    <h3 class="project-subtitle">Інтернет-магазин</h3>
+                                                    <h3 class="project-subtitle">Online store</h3>
                                                     <p class="project-description1 my-4">
-                                                        Сучасний інтернет-магазин одягу з широким асортиментом чоловічого та жіночого одягу, зручним інтерфейсом і адаптивним дизайном. Магазин пропонує
-                                                        фільтрацію товарів, детальні описи, швидку доставку й просту систему оформлення замовлення. Ідеальний приклад поєднання естетики,
-                                                        функціональності та зручності користування.
+                                                        Modern Online clothing store with a wide range of men's and women's clothing, 
+                                                        a user-friendly interface and adaptive design. The store offers product filtering, 
+                                                        detailed descriptions, fast delivery and a simple ordering system. A perfect example 
+                                                        of combining aesthetics, functionality and ease of use.
                                                     </p>
                                                     <div class="btn-container flex justify-center item-anim">
                                                         <a class="btn" onclick="">
-                                                            <h3><span>Переглянути</span></h3>
+                                                            <h3><span>Review</span></h3>
                                                         </a>
                                                     </div>
-                                                    <!-- Список використаних технологій -->
+                                                    <!-- List of technologies used -->
                                                     <div class="flex gap-10 mt-6 justify-center">
                                                         <span class="p-6 bg-blue-200 text-blue-600 rounded-full flex items-center justify-center">PHP</span>
                                                         <span class="p-6 bg-green-200 text-green-600 rounded-full flex items-center justify-center">Python</span>
@@ -877,23 +884,25 @@
                                                 </div>
                                             </div>
                                             <div class="slide grid projects-container mx-auto">
-                                                <!-- Проект 2 -->
-                                                <h3 class="project-title mb-4">Чат</h3>
+                                                <!-- Project 2 -->
+                                                <h3 class="project-title mb-4">Chat</h3>
                                                 <div class="img-wrapper image2">
-                                                    <img src="./img/projects/chat1.jpg" alt="Чат" loading="lazy" />
+                                                    <img src="./img/projects/chat1.jpg" alt="Chat" loading="lazy" />
                                                 </div>
                                                 <div class="project mb-16 content2">
-                                                    <h3 class="project-subtitle">Чат</h3>
+                                                    <h3 class="project-subtitle">Chat</h3>
                                                     <p class="project-description1 my-4">
-                                                        Інтерактивний чат, створений для зручного спілкування в реальному часі. Підтримує приватні та групові розмови, надсилання повідомлень, емодзі,
-                                                        зображень і сповіщення про активність користувачів. Має чистий інтерфейс, швидку синхронізацію та адаптивний дизайн для будь-яких пристроїв.
+                                                        An interactive chat designed for convenient real-time communication. Supports 
+                                                        private and group conversations, sending messages, emojis, images, and notifications 
+                                                        about user activity. Has a clean interface, fast synchronization, and a responsive 
+                                                        design for any device.
                                                     </p>
                                                     <div class="btn-container flex justify-center">
                                                         <a class="btn" onclick="">
-                                                            <h3><span>Переглянути</span></h3>
+                                                            <h3><span>Review</span></h3>
                                                         </a>
                                                     </div>
-                                                    <!-- Список використаних технологій -->
+                                                    <!-- List of technologies used -->
                                                     <div class="flex gap-10 mt-6 justify-center">
                                                         <span class="p-6 bg-yellow-200 text-yellow-600 rounded-full flex items-center justify-center">JavaScript</span>
                                                         <span class="p-6 bg-teal-200 text-teal-600 rounded-full flex items-center justify-center">Python</span>
@@ -902,24 +911,24 @@
                                                 </div>
                                             </div>
                                             <div class="slide grid projects-container mx-auto">
-                                                <!-- Проект 3 -->
-                                                <h3 class="project-title mb-4">Сайт</h3>
+                                                <!-- Project 3 -->
+                                                <h3 class="project-title mb-4">Site</h3>
                                                 <div class="img-wrapper image3">
-                                                    <img src="./img/projects/site2.jpg" alt="Сайт" loading="lazy" />
+                                                    <img src="./img/projects/site2.jpg" alt="Site" loading="lazy" />
                                                 </div>
                                                 <div class="project mb-16 content3">
-                                                    <h3 class="project-subtitle">Сайт</h3>
+                                                    <h3 class="project-subtitle">Site</h3>
                                                     <p class="project-description1 my-4">
-                                                        Сайт знайомств, створений для легкого пошуку нових знайомств і спілкування. Користувачі можуть створювати профілі, додавати фото, переглядати
-                                                        анкети, ставити вподобання та вести особисті чати. Інтуїтивний інтерфейс і адаптивний дизайн забезпечують зручний досвід користування на
-                                                        будь-якому пристрої.
+                                                        A dating site designed to make it easy to find new people and communicate. Users can create profiles, 
+                                                        add photos, view profiles, like and have private chats. The intuitive interface and responsive design 
+                                                        provide a convenient user experience on any device.
                                                     </p>
                                                     <div class="btn-container flex justify-center">
                                                         <a class="btn" onclick="">
-                                                            <h3><span>Переглянути</span></h3>
+                                                            <h3><span>Review</span></h3>
                                                         </a>
                                                     </div>
-                                                    <!-- Список використаних технологій -->
+                                                    <!-- List of technologies used -->
                                                     <div class="flex gap-10 mt-6 justify-center">
                                                         <span class="p-6 bg-rose-200 text-rose-600 rounded-full flex items-center justify-center">HTML</span>
                                                         <span class="p-6 bg-sky-200 text-sky-600 rounded-full flex items-center justify-center">CSS</span>
@@ -928,23 +937,24 @@
                                                 </div>
                                             </div>
                                             <div class="slide grid projects-container mx-auto">
-                                                <!-- Проект 4 -->
-                                                <h3 class="project-title mb-4">Система</h3>
+                                                <!-- Project 4 -->
+                                                <h3 class="project-title mb-4">System</h3>
                                                 <div class="img-wrapper image4">
-                                                    <img src="./img/projects/system2.jpg" alt="Система" loading="lazy" />
+                                                    <img src="./img/projects/system2.jpg" alt="System" loading="lazy" />
                                                 </div>
                                                 <div class="project mb-16 content4">
-                                                    <h3 class="project-subtitle">Система</h3>
+                                                    <h3 class="project-subtitle">System</h3>
                                                     <p class="project-description1 my-4">
-                                                        Система моніторингу, розроблена для відстеження стану об’єктів у реальному часі. Забезпечує зручне відображення даних у вигляді графіків,
-                                                        таблиць та аналітичних звітів. Має гнучку панель керування, сповіщення про зміни та можливість налаштування під різні типи даних.
+                                                        A monitoring system designed to track the status of objects in real time. Provides convenient data 
+                                                        display in the form of graphs, tables and analytical reports. Has a flexible control panel, 
+                                                        notifications about changes and the ability to configure for different types of data.
                                                     </p>
                                                     <div class="btn-container flex justify-center">
                                                         <a class="btn" onclick="">
-                                                            <h3><span>Переглянути</span></h3>
+                                                            <h3><span>Review</span></h3>
                                                         </a>
                                                     </div>
-                                                    <!-- Список використаних технологій -->
+                                                    <!-- List of technologies used -->
                                                     <div class="flex gap-10 mt-6 justify-center">
                                                         <span class="p-6 bg-cyan-200 text-cyan-600 rounded-full flex items-center justify-center">React</span>
                                                         <span class="p-6 bg-red-200 text-red-600 rounded-full flex items-center justify-center">Python</span>
@@ -961,12 +971,13 @@
                     </div>
                 </section>
 
+                <!-- Contacts section -->
                 <section id="contacts" class="mb-16">
                     <div class="max-width-container mx-auto px-4 relative z-10">
                         <div class="text-center mb-16 item-anim">
-                            <h2 class="font-bold mb-4">Зв'яжіться зі мною</h2>
+                            <h2 class="font-bold mb-4">Contact me</h2>
                             <div class="w-36 h-1 bg-yellow-700 mx-auto mb-8"></div>
-                            <p class="text-xl">Готові до співпраці? Давайте створимо щось неймовірне</p>
+                            <p class="text-xl">Ready to collaborate? Let's create something incredible</p>
                         </div>
                         <div class="grid md:grid-cols-2 gap-20">
                             <div class="space-y-8 item-anim">
@@ -984,7 +995,7 @@
                                         <img src="img/icons/call_24dp.svg" alt="Call Icon" class="w-6 h-6" loading="lazy" />
                                     </div>
                                     <div>
-                                        <h3 class="font-semibold text-lg">Телефон</h3>
+                                        <h3 class="font-semibold text-lg">Phone</h3>
                                         <p class="">+380 XX XXX XX XX</p>
                                     </div>
                                 </div>
@@ -993,8 +1004,8 @@
                                         <img src="img/icons/location_on_24dp.svg" alt="Location Icon" class="w-6 h-6" loading="lazy" />
                                     </div>
                                     <div>
-                                        <h3 class="font-semibold text-lg">Локація</h3>
-                                        <p class="">Київ, Україна</p>
+                                        <h3 class="font-semibold text-lg">Location</h3>
+                                        <p class="">Kyiv, Ukraine</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center space-x-4 font-semibold">
@@ -1003,7 +1014,7 @@
                                     </div>
                                     <div class="map-link-container">
                                         <a href="https://www.google.com/maps?q=Київ" target="_blank" rel="noopener noreferrer" class="map-link">
-                                            <p><span>Відкрити карту Google Maps</span></p></a
+                                            <p><span>Open Google Maps</span></p></a
                                         >
                                     </div>
                                 </div>
@@ -1012,24 +1023,24 @@
                                 <form id="contact-form" class="contact-form rounded-2xl p-8 border border-white shadow-strong item-anim">
                                     <div class="space-y-6">
                                         <div>
-                                            <label class="block text-sm font-semibold mb-2">Ваше ім'я</label>
-                                            <input type="text" id="name" class="w-full px-4 py-3 bg-white border border-white rounded-lg" placeholder="Введіть ваше ім'я" />
+                                            <label class="block text-sm font-semibold mb-2">Your name</label>
+                                            <input type="text" id="name" class="w-full px-4 py-3 bg-white border border-white rounded-lg" placeholder="Enter your name" />
                                         </div>
                                         <div>
                                             <label class="block text-sm font-semibold mb-2">Email</label>
                                             <input type="email" id="email" class="w-full px-4 py-3 bg-white border border-white rounded-lg" placeholder="your@email.com" />
                                         </div>
                                         <div>
-                                            <label class="block text-sm font-semibold mb-2">Повідомлення</label>
+                                            <label class="block text-sm font-semibold mb-2">Message</label>
                                             <textarea
                                                 id="message"
                                                 rows="4"
                                                 class="w-full px-4 py-3 bg-white border border-white rounded-lg resize-none"
-                                                placeholder="Розкажіть про ваш проект..."></textarea>
+                                                placeholder="Tell us about your project..."></textarea>
                                         </div>
                                         <div class="btn-container flex justify-center">
                                             <button type="button" class="btn w-full bg-white py-3 rounded-lg font-semibold" onclick="sendForm()">
-                                                <h4><span>Надіслати повідомлення</span></h4>
+                                                <h4><span>Send message</span></h4>
                                             </button>
                                         </div>
                                     </div>
@@ -1040,13 +1051,13 @@
                 </section>
             </main>
 
-            <!-- Нижня навігаційна панель -->
+            <!-- Botton navigation panel -->
             <footer class="footer flex justify-center items-center text-center">
-                <h6 class="h6 text-gray"><span class="text-anim">&copy; 2025 — Розробник. Всі права захищено.</span></h6>
+                <h6 class="h6 text-gray"><span class="text-anim">&copy; 2025 — Developer <b>MrDLC7</b>. All rights reserved.</span></h6>
             </footer>
 
-            <!-- Логічна частина -->
-            <!-- Для анімації тексту -->
+            <!-- Logic part -->
+            <!-- For text animation -->
             <script
                 src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
                 integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="

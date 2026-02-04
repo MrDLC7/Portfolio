@@ -48,15 +48,15 @@ function initThemeAndScrollControls() {
 
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-theme');
-        themeButton.title = 'Світла тема';
+        themeButton.title = 'Light theme';
     } else {
-        themeButton.title = 'Темна тема';
+        themeButton.title = 'Dark theme';
     }
 
     themeButton.addEventListener('click', () => {
         const isDark = document.body.classList.toggle('dark-theme');
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        themeButton.title = isDark ? 'Світла тема' : 'Темна тема';
+        themeButton.title = isDark ? 'Light theme' : 'Dark theme';
         themeButton.innerHTML = isDark ?  sunImage : moonImage;
     });
 
@@ -72,7 +72,7 @@ function initThemeAndScrollControls() {
                 stroke-linecap="round" stroke-linejoin="round" />
         </svg>`;
 
-    backToTopButton.title = 'Вгору';
+    backToTopButton.title = 'Up';
     backToTopButton.classList.add('dynamic-btn');
 
     Object.assign(backToTopButton.style, {

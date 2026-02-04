@@ -68,7 +68,7 @@
     --footer-padding: 100px;
 
     /* Other */
-    --scroll-padding-top: 6rem;
+    --scroll-padding-top: 7rem;
     --gap-50: 3rem;
     --margin-top-project-technogies: 1rem;
   }
@@ -117,7 +117,7 @@
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding-top);
     letter-spacing: 0.5px;
-    min-width: 480px;
+    min-width: 359px;
     min-height: 100%;
   }
   
@@ -157,7 +157,7 @@
 }
 
 /* Але дозволити виділення тексту в input, textarea і контентних елементах */
-input, textarea, [contenteditable="true"] {
+p, input, textarea, [contenteditable="true"] {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
@@ -168,14 +168,6 @@ input, textarea, [contenteditable="true"] {
 html, body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
-  .unselectable {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-  }
   
   /* === Typography & Links === */
   a {
@@ -209,8 +201,43 @@ html, body {
   
   /* === Responsive Breakpoints === */
   
-  /* Medium mobile (≥480px) - Default min-width already set in html */
+   /* Extra small mobile (до 420px) */
+   @media (max-width: 359px) {
+    :root {
+      --header-h3-size: 1rem;
+      --button-font-size: 0.8rem;
+      --button-padding-y: 0.65rem;
+      --button-padding-x: 1.3rem;
+      --span-padding-y: 0.6rem;
+      --span-padding-x: 1.1rem;
+    }
+  }
   
+  /* Small mobile (≥360px) */
+  @media (min-width: 360px) {
+    :root {
+      --header-h3-size: 1.2rem;
+      --button-font-size: 0.9rem;
+      --button-padding-y: 0.75rem;
+      --button-padding-x: 1.5rem;
+      --span-padding-y: 0.7rem;
+      --span-padding-x: 1.1rem;
+    }
+  }
+  
+  /* Medium mobile (≥480px) */
+  @media (min-width: 480px) {
+    :root {
+      --header-h3-size: 1.35rem;
+      --button-font-size: 1rem;
+      --button-padding-y: 0.8rem;
+      --button-padding-x: 1.6rem;
+      --span-padding-y: 0.8rem;
+      --span-padding-x: 1.25rem;
+    }
+  }
+  
+  /* Medium mobile (≥480px) - Default min-width already set in html */
   /* Large mobile (≥600px) */
   @media (min-width: 600px) {
     :root {

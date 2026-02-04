@@ -127,9 +127,6 @@
     margin-top: 4rem;
 }
 
-.mb-2 {
-    margin-bottom: 0.5rem;
-}
 
 .mb-4 {
     margin-bottom: 1rem;
@@ -141,11 +138,6 @@
 
 .mb-8 {
     margin-bottom: 2rem;
-}
-
-.mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 .m-50 {
@@ -182,13 +174,7 @@
     padding: 1rem 2rem;
 }
 
-.p-5 {
-    padding: 0.5rem;
-}
 
-.p-8 {
-    padding: 2rem;
-}
 
 .p-20 {
     padding: 4rem;
@@ -222,11 +208,6 @@
 .py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-}
-
-.py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
 }
 
 .py-10 {

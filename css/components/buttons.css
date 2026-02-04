@@ -41,7 +41,7 @@ button:hover {
     
     font-size: var(--btn-font-size);
     padding: var(--btn-padding-y) var(--btn-padding-x);
-    margin: 10px;                   /* Зовнішній відступ */
+    margin: var(--btn-padding-y) var(--btn-padding-x);                   /* Зовнішній відступ */
     border-radius: 6px;             /* Закруглені кути */
     
     /* Тіньова композиція (багаторівнева, для об’єму та світіння) */

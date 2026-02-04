@@ -31,7 +31,7 @@
 /* === Надвеликий ===  */
 .text-2xl {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: var(--line-size-2xl);
 }
 
 .text-3xl {

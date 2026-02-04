@@ -25,6 +25,8 @@
     --projects-padding-top: 0.1rem;
     --px-40-padding: 0;
     --mb-16-margin: 1rem;
+    --icon-dot: 8px;
+    --mt-2: 0.5rem;
   }
   
   /* === Base Projects Styles === */
@@ -101,6 +103,7 @@
   
   /* Slider styles */
   .slider-wrapper {
+    min-width: 300px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -127,7 +130,7 @@
   .controls {
     z-index: 9999;
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 0;
     width: 100%;
     display: flex;
@@ -139,7 +142,7 @@
   .btn_nav {
     opacity: 0.5;
     background-color: var(--color-background-primary);
-    padding: 12px 0;
+    padding: 15px 5px;
     cursor: pointer;
     pointer-events: auto;
     display: flex;
@@ -148,8 +151,8 @@
   }
   
   .icon_nav {
-    width: 48px;
-    height: 48px;
+    width: var(--icon-md);
+    height: var(--icon-md);
     fill: var(--color-text-primary);
     transition: 0.3s;
   }
@@ -161,12 +164,12 @@
   /* Slider dots */
   .dots {
     text-align: center;
-    margin-top: 10px;
+    margin-top: var(--mt-2);
   }
   
   .dots .dot {
-    width: 12px;
-    height: 12px;
+    width: var(--icon-dot);
+    height: var(--icon-dot);
     background: #ccc;
     border-radius: 50%;
     display: inline-block;
@@ -255,14 +258,16 @@
   
   /* === Responsive Breakpoints === */
   
-  /* Extra small mobile (до 420px) */
-  @media (max-width: 420px) {
+  /* Extra small mobile*/
+  @media (max-width: 359px) {
     :root {
       --max-width-h2-size: 1.8rem;
       --max-width-font-size: 0.9rem;
       --project-img-size: 300px;
+      --mb-16-margin: 1rem;
+      --btn-padding-y: 0.5rem;
       --btn-padding-x: 1.2rem;
-      --mb-16-margin: 0.5rem;
+      --btn-font-size: 0.5rem;
     }
   }
   
@@ -274,6 +279,7 @@
       --project-padding: 0 0.5rem;
       --px-40-padding: 0;
       --mb-16-margin: 1rem;
+      --btn-font-size: 0.6rem;
     }
   }
   
@@ -284,6 +290,7 @@
       --max-width-h2-size: 1.7rem;
       --project-padding: 0 1rem;
       --btn-padding-x: 1.7rem;
+      --btn-font-size: 0.7rem;
     }
   }
   
@@ -295,6 +302,7 @@
       --btn-font-size: 0.8rem;
       --mb-16-margin: 2rem;
       --projects-padding-top: 0.1rem;
+      --icon-dot: 10px;
     }
   }
   
@@ -308,6 +316,7 @@
       --project-subtitle-display: none;
       --btn-font-size: 0.9rem;
       --projects-padding-top: 0rem;
+      --mt-2: 1rem;
     }
     
     .project-subtitle {
@@ -319,7 +328,7 @@
   @media (min-width: 1024px) {
     :root {
       --project-img-size: 500px;
-      --projects-max-width-container: 54rem;
+      --projects-max-width-container: 60rem;
       --max-width-font-size: 1rem;
       --max-width-h2-size: 2rem;
       --project-subtitle-size: 1.2rem;
@@ -331,6 +340,7 @@
       --project-subtitle-display: block;
       --project-margin-bottom: 0;
       --project-margin: 0;
+      --icon-dot: 12px;
     }
     
     .project-subtitle {
@@ -342,7 +352,7 @@
   @media (min-width: 1280px) {
     :root {
       --project-img-size: 550px;
-      --projects-max-width-container: 64rem;
+      --projects-max-width-container: 66rem;
       --max-width-font-size: 1.2rem;
       --max-width-h2-size: 2.2rem;
       --project-subtitle-size: 1.4rem;
@@ -364,6 +374,7 @@
       --btn-font-size: 1.1rem;
       --btn-padding-y: 0.9rem;
       --btn-padding-x: 2rem;
+      --mt-2: 1.5rem;
     }
   }
   
@@ -378,6 +389,7 @@
       --btn-font-size: 1.2rem;
       --btn-padding-y: 1rem;
       --btn-padding-x: 2rem;
+      --icon-dot: 16px;
     }
   }
   
@@ -392,6 +404,8 @@
       --btn-font-size: 1.4rem;
       --btn-padding-y: 1rem;
       --btn-padding-x: 2.5rem;
+      --icon-dot: 18px;
+      --mt-2: 2rem;
     }
   }
   

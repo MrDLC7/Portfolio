@@ -7,8 +7,14 @@
     /* Padding */
     --py-20-top: 0rem;
     --py-20-bottom: 0rem;
-    --py-10-top: 1.2rem;
-    --py-10-bottom: 1.2rem;
+    --py-10-top: 0.75rem;
+    --py-10-bottom: 0.75rem;
+    --py-6-top: 0.1rem;
+    --py-6-bottom: 0rem;
+    --p-5: 0rem;
+    --mb-skill-4: 0.5rem;
+    --mb-skill-2: 0.1rem;
+    --mx-4: 0.5rem;
     --skills-padding-top: 3rem;
     
     /* Grid */
@@ -26,7 +32,7 @@
     --space-y-skills-h3-size: 1rem;
     --space-y-skills-h4-size: 0.8rem;
     --space-y-skills-span-size: 0.6rem;
-    --h-3-height: 0.45rem;
+    --h-3-height: 0.25rem;
   }
   
   /* === Base Styles === */
@@ -102,6 +108,26 @@
   }
   
   /* Padding utilities */
+  .mb-skill-4 {
+    margin-bottom: var(--mb-skill-4);
+  }
+
+  .mb-skill-2 {
+    margin-bottom: var(--mb-skill-2);
+}
+  .mx-4 {
+    margin-left: var(--mx-4);
+    margin-right: var(--mx-4);
+}
+
+  .p-5 {
+    padding: var(--p-5);
+}
+  .py-6 {
+    padding-top: var(--py-6-top);
+    padding-bottom: var(--py-6-bottom);
+}
+
   .py-20 {
     padding-top: var(--py-20-top);
     padding-bottom: var(--py-20-bottom);
@@ -150,6 +176,34 @@
 
   
   /* === Responsive Breakpoints === */
+/* Extra small mobile (до 359px) */
+@media (max-width: 359px) {
+  :root {
+    --py-20-top: 0.5rem;
+    --py-20-bottom: 0.5rem;
+    --gap-between: 1rem;
+    --max-w-6xl: 40rem;
+    --space-y-skills-h3-size: 0.75rem;
+    --space-y-skills-h4-size: 0.65rem;
+    --space-y-skills-span-size: 0.55rem;
+  }
+}
+
+/* Small mobile (≥360px) */
+@media (min-width: 360px) {
+  :root {
+    --py-20-top: 0.75rem;
+    --py-20-bottom: 0.75rem;
+    --gap-between: 1.25rem;
+    --max-w-6xl: 40rem;
+    --space-y-skills-h3-size: 0.8rem;
+    --space-y-skills-h4-size: 0.7rem;
+    --space-y-skills-span-size: 0.6em;
+    --mb-skill-4: 0.5rem;
+    --mx-4: 0.5rem;
+    --h-3-height: 0.25rem;
+  }
+}
 
   /* Medium mobile (≥480px) */
   @media (min-width: 480px) {
@@ -157,6 +211,15 @@
       --py-20-top: 1rem;
       --py-20-bottom: 1rem;
       --gap-between: 1.5rem;
+      --py-10-top: 1rem;
+      --py-10-bottom: 1rem;
+      --max-w-6xl: 40rem;
+      --space-y-skills-h3-size: 0.9rem;
+      --space-y-skills-h4-size: 0.8rem;
+      --space-y-skills-span-size: 0.7rem;
+      --h-3-height: 0.35rem;
+      --py-6-top: 0.25rem;
+      --py-6-bottom: 0.1rem;
     }
   }
   
@@ -167,10 +230,11 @@
       --py-20-bottom: 2rem;
       --gap-between: 1.8rem;
       --max-w-6xl: 40rem;
-      --space-y-skills-h3-size: 1.15rem;
+      --space-y-skills-h3-size: 1rem;
       --space-y-skills-h4-size: 0.9rem;
-      --space-y-skills-span-size: 0.7rem;
-      --h-3-height: 0.55rem;
+      --space-y-skills-span-size: 0.8rem;
+      --mb-skill-4: 0.75rem;
+      --h-3-height: 0.4rem;
       --grid-cols-skills: 2;
       --skills-grid-2-display: block;
       --skills-grid-3-display: none;
@@ -185,6 +249,9 @@
       --py-10-top: 1.3rem;
       --py-10-bottom: 1.3rem;
       --gap-between: 2rem;
+      --p-5: 0.25rem;
+      --mx-4: 0.75rem;
+      --mb-skill-4: 0.75rem;
     }
   }
   
@@ -202,6 +269,11 @@
       --grid-cols-skills: 3;
       --skills-grid-2-display: none;
       --skills-grid-3-display: block;
+      --p-5: 0.5rem;
+      --mx-4: 1.25rem;
+      --mb-skill-2: 0.2rem;
+      --py-6-top: 0.35rem;
+      --py-6-bottom: 0.15rem;
     }
   }
   
@@ -226,7 +298,9 @@
       --space-y-skills-h3-size: 1.3rem;
       --space-y-skills-h4-size: 1rem;
       --space-y-skills-span-size: 0.8rem;
-      --h-3-height: 0.55rem;
+      --h-3-height: 0.5rem;
+      --py-6-top: 0.5rem;
+      --py-6-bottom: 0.2rem;
     }
   }
   
@@ -241,7 +315,7 @@
       --space-y-skills-h3-size: 1.35rem;
       --space-y-skills-h4-size: 1.1rem;
       --space-y-skills-span-size: 0.9rem;
-      --h-3-height: 0.65rem;
+      --mx-4: 1.5rem;
     }
   }
   
@@ -256,6 +330,12 @@
       --space-y-skills-h3-size: 1.45rem;
       --space-y-skills-h4-size: 1.25rem;
       --space-y-skills-span-size: 1rem;
+      --p-5: 0.75rem;
+      --mx-4: 1.75rem;
+      --mb-skill-4: 1rem;
+      --mb-skill-2: 0.3rem;
+      --py-6-top: 0.75rem;
+      --h-3-height: 0.6rem;
     }
   }
   
@@ -273,6 +353,10 @@
       --space-y-skills-span-size: 1.1rem;
       --skills-grid-3-display: none;
       --skills-grid-4-display: block;
+      --mx-4: 2rem;
+      --py-6-top: 1.5rem;
+      --py-6-bottom: 0.5rem;
+      --h-3-height: 0.7rem;
     }
   }
   
@@ -287,6 +371,8 @@
       --space-y-skills-h3-size: 1.8rem;
       --space-y-skills-h4-size: 1.5rem;
       --space-y-skills-span-size: 1.3rem;
+      --mb-skill-4: 1.25rem;
+      --mb-skill-2: 0.3rem;
     }
   }
   

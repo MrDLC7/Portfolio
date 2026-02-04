@@ -13,10 +13,11 @@
     --item-padding-x: 2.25rem;
     --item-padding-y: 0.75rem;
     --wrapper-height: 120px;
-    --btn-padding-y: 0.75rem;
-    --btn-padding-x: 1.5rem;
+    --btn-padding-y: 0.4rem;
+    --btn-padding-x: 1.3rem;
     --btn-font-size: 0.7rem;
     --letter-spacing: 0.1px;
+    --line-size-2xl: 1rem;
   }
   
   /* === Base styles === */
@@ -125,7 +126,24 @@
   }
   
   /* === Responsive Breakpoints === */
-  
+  /* Extra small mobile (до 359px) */
+@media (max-width: 359px) {
+  :root {
+    --main-padding: 5px;
+    --main-max-width: 30rem;
+    --img-width: 180px;
+    --h1-font-size: 1rem;
+    --p-font-size: 0.5rem;
+    --item-width: 100px;
+    --item-font-size: 0.75rem;
+    --item-padding-x: 2rem;
+    --item-padding-y: 0.5rem;
+    --letter-spacing: 0.05px;
+    --btn-padding-y: 0.4rem;
+    --btn-padding-x: 1.3rem;
+  }
+}
+
   /* Small mobile (≥360px) */
   @media (min-width: 360px) {
     :root {
@@ -163,7 +181,7 @@
   /* Large mobile (≥600px) */
   @media (min-width: 600px) {
     :root {
-      --main-padding: 25px;
+      --main-padding: 0px;
       --main-max-width: 60rem;
       --img-width: 320px;
       --h1-font-size: 1.75rem;
@@ -179,13 +197,14 @@
       --btn-font-size: 0.9rem;
       --letter-spacing: 0.2px;
       --height--line: 0.16rem;
+      --line-size-2xl: 1.5rem;
     }
   }
   
   /* Tablet portrait (≥768px) */
   @media (min-width: 768px) {
     :root {
-      --main-padding: 35px;
+      --main-padding: 25px;
       --main-max-width: 70rem;
       --img-width: 360px;
       --h1-font-size: 2rem;
@@ -205,7 +224,7 @@
   /* Small desktop / Tablet (≥1024px) */
   @media (min-width: 1024px) {
     :root {
-      --main-padding: 65px;
+      --main-padding: 30px;
       --main-max-width: 80rem;
       --img-width: 320px;
       --h1-font-size: 2rem;
@@ -218,6 +237,7 @@
       --btn-padding-y: 1rem;
       --btn-padding-x: 2rem;
       --btn-font-size: 1rem;
+      --line-size-2xl: 2rem;
     }
     
     #main {
@@ -232,7 +252,7 @@
   /* Medium desktop / Tablet landscape (≥1280px) */
   @media (min-width: 1280px) {
     :root {
-      --main-padding: 55px;
+      --main-padding: 35px;
       --main-max-width: 90rem;
       --img-width: 360px;
       --h1-font-size: 2.25rem;
@@ -267,6 +287,7 @@
       --btn-padding-y: 1.25rem;
       --btn-padding-x: 2.5rem;
       --btn-font-size: 1.25rem;
+      --line-size-2xl: 2.5rem;
     }
   }
   
@@ -309,6 +330,7 @@
       --btn-padding-x: 2.75rem;
       --btn-font-size: 1.375rem;
       --height--line: 0.25rem;
+      --line-size-2xl: 3rem;
     }
   }
   

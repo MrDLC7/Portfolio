@@ -129,10 +129,10 @@ function showSliderMode() {
 
     // Змінюємо текст кнопки
     if (projects.classList.contains('mode-slider')) {
-        sliderText.textContent = 'Режим "Стандартний"';
+        sliderText.textContent = 'Mode "Standart"';
     }
     else {
-        sliderText.textContent = 'Режим "Слайдер"';
+        sliderText.textContent = 'Mode "Slider"';
     }
 }
 
